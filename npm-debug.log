@@ -1,0 +1,2153 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-bitballoon',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of /Users/iandenty/Sites/visualisations_explore/package.json
+5 warn package.json visualisations@0.0.1 No repository field.
+6 warn package.json visualisations@0.0.1 No README data
+7 verbose installManyTop reading scoped package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt/package.json
+8 verbose installManyTop reading scoped package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-assemble/package.json
+9 verbose installManyTop reading scoped package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-contrib-clean/package.json
+10 verbose installManyTop reading scoped package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-contrib-connect/package.json
+11 verbose installManyTop reading scoped package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-contrib-uglify/package.json
+12 verbose installManyTop reading scoped package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-contrib-watch/package.json
+13 info package.json grunt-assemble@0.4.0 No license field.
+14 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/package.json
+15 silly cache add args [ 'grunt-bitballoon', null ]
+16 verbose cache add spec grunt-bitballoon
+17 silly cache add parsed spec Result {
+17 silly cache add   raw: 'grunt-bitballoon',
+17 silly cache add   scope: null,
+17 silly cache add   name: 'grunt-bitballoon',
+17 silly cache add   rawSpec: '',
+17 silly cache add   spec: 'latest',
+17 silly cache add   type: 'tag' }
+18 silly addNamed grunt-bitballoon@latest
+19 verbose addNamed "latest" is being treated as a dist-tag for grunt-bitballoon
+20 info addNameTag [ 'grunt-bitballoon', 'latest' ]
+21 silly mapToRegistry name grunt-bitballoon
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/grunt-bitballoon
+25 verbose addNameTag registry:https://registry.npmjs.org/grunt-bitballoon not in flight; fetching
+26 verbose request uri https://registry.npmjs.org/grunt-bitballoon
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 12:01:56 PM
+29 verbose request id 6439949ef90a742b
+30 verbose etag "QJ64NDLFMIHOUERS4CVCUBRO"
+31 http request GET https://registry.npmjs.org/grunt-bitballoon
+32 http 304 https://registry.npmjs.org/grunt-bitballoon
+33 verbose headers { date: 'Wed, 27 Apr 2016 11:01:56 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   etag: '"QJ64NDLFMIHOUERS4CVCUBRO"',
+33 verbose headers   age: '0',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-lcy1124-LCY',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1461754916.969081,VS0,VE403',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 silly get cb [ 304,
+34 silly get   { date: 'Wed, 27 Apr 2016 11:01:56 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     'cache-control': 'max-age=300',
+34 silly get     etag: '"QJ64NDLFMIHOUERS4CVCUBRO"',
+34 silly get     age: '0',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-lcy1124-LCY',
+34 silly get     'x-cache': 'MISS',
+34 silly get     'x-cache-hits': '0',
+34 silly get     'x-timer': 'S1461754916.969081,VS0,VE403',
+34 silly get     vary: 'Accept-Encoding' } ]
+35 verbose etag https://registry.npmjs.org/grunt-bitballoon from cache
+36 verbose get saving grunt-bitballoon to /Users/iandenty/.npm/registry.npmjs.org/grunt-bitballoon/.cache.json
+37 silly addNameTag next cb for grunt-bitballoon with tag latest
+38 silly addNamed grunt-bitballoon@0.1.3
+39 verbose addNamed "0.1.3" is a plain semver version for grunt-bitballoon
+40 silly cache afterAdd grunt-bitballoon@0.1.3
+41 verbose afterAdd /Users/iandenty/.npm/grunt-bitballoon/0.1.3/package/package.json not in flight; writing
+42 verbose afterAdd /Users/iandenty/.npm/grunt-bitballoon/0.1.3/package/package.json written
+43 silly install resolved [ { name: 'grunt-bitballoon',
+43 silly install resolved     description: 'Deploy to BitBalloon',
+43 silly install resolved     version: '0.1.3',
+43 silly install resolved     homepage: 'https://github.com/BitBalloon/grunt-bitballoon',
+43 silly install resolved     author:
+43 silly install resolved      { name: 'Mathias Biilmann Christensen',
+43 silly install resolved        email: 'mathias@bitballoon.com',
+43 silly install resolved        url: 'https://www.bitballoon.com' },
+43 silly install resolved     repository:
+43 silly install resolved      { type: 'git',
+43 silly install resolved        url: 'git+https://github.com/BitBalloon/grunt-bitballoon.git' },
+43 silly install resolved     bugs: { url: 'https://github.com/BitBalloon/grunt-bitballoon/issues' },
+43 silly install resolved     licenses: [ [Object] ],
+43 silly install resolved     main: 'Gruntfile.js',
+43 silly install resolved     engines: { node: '>= 0.8.0' },
+43 silly install resolved     scripts: { test: 'grunt test' },
+43 silly install resolved     dependencies: { bitballoon: '>= 0.2.1' },
+43 silly install resolved     devDependencies:
+43 silly install resolved      { 'grunt-contrib-jshint': '~0.6.0',
+43 silly install resolved        'grunt-contrib-clean': '~0.4.0',
+43 silly install resolved        'grunt-contrib-nodeunit': '~0.2.0',
+43 silly install resolved        grunt: '~0.4.1' },
+43 silly install resolved     peerDependencies: { grunt: '~0.4.1' },
+43 silly install resolved     keywords: [ 'gruntplugin' ],
+43 silly install resolved     gitHead: '3d122f9410ff38fa1f0f6b75b3a5c38715a7b921',
+43 silly install resolved     _id: 'grunt-bitballoon@0.1.3',
+43 silly install resolved     _shasum: 'cd0639d87cb2496f749593f1a277eba82e8c3385',
+43 silly install resolved     _from: 'grunt-bitballoon@latest',
+43 silly install resolved     _npmVersion: '2.1.6',
+43 silly install resolved     _nodeVersion: '0.10.33',
+43 silly install resolved     _npmUser: { name: 'biilmann', email: 'info@mathias-biilmann.net' },
+43 silly install resolved     maintainers: [ [Object] ],
+43 silly install resolved     dist:
+43 silly install resolved      { shasum: 'cd0639d87cb2496f749593f1a277eba82e8c3385',
+43 silly install resolved        tarball: 'https://registry.npmjs.org/grunt-bitballoon/-/grunt-bitballoon-0.1.3.tgz' },
+43 silly install resolved     directories: {},
+43 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-bitballoon/-/grunt-bitballoon-0.1.3.tgz',
+43 silly install resolved     readme: 'ERROR: No README data found!' } ]
+44 info install grunt-bitballoon@0.1.3 into /Users/iandenty/Sites/visualisations_explore
+45 info installOne grunt-bitballoon@0.1.3
+46 verbose installOne of grunt-bitballoon to /Users/iandenty/Sites/visualisations_explore not in flight; installing
+47 verbose lock using /Users/iandenty/.npm/_locks/grunt-bitballoon-9084bc7839fb8189.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon
+48 silly install write writing grunt-bitballoon 0.1.3 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon
+49 verbose unbuild node_modules/grunt-bitballoon
+50 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon is being purged from base /Users/iandenty/Sites/visualisations_explore
+51 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon
+52 verbose tar unpack /Users/iandenty/.npm/grunt-bitballoon/0.1.3/package.tgz
+53 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon
+54 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon is being purged
+55 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon
+56 silly gunzTarPerm modes [ '755', '644' ]
+57 silly gunzTarPerm extractEntry package.json
+58 silly gunzTarPerm extractEntry .npmignore
+59 silly gunzTarPerm extractEntry README.md
+60 silly gunzTarPerm extractEntry Gruntfile.js
+61 silly gunzTarPerm extractEntry .jshintrc
+62 silly gunzTarPerm extractEntry LICENSE-MIT
+63 silly gunzTarPerm extractEntry tasks/bitballoon.js
+64 silly gunzTarPerm extractEntry tasks/lib/deployTask.js
+65 silly gunzTarPerm extractEntry test/bitballoon_test.js
+66 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/package.json
+67 info preinstall grunt-bitballoon@0.1.3
+68 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/package.json
+69 silly prepareForInstallMany adding bitballoon@>= 0.2.1 from grunt-bitballoon dependencies
+70 silly prepareForInstallMany adding grunt@~0.4.1 from grunt-bitballoon peerDependencies
+71 warn peerDependencies The peer dependency grunt@~0.4.1 included from grunt-bitballoon will no
+72 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+73 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+74 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/package.json
+75 silly cache add args [ 'bitballoon@>= 0.2.1', null ]
+76 verbose cache add spec bitballoon@>= 0.2.1
+77 silly cache add parsed spec Result {
+77 silly cache add   raw: 'bitballoon@>= 0.2.1',
+77 silly cache add   scope: null,
+77 silly cache add   name: 'bitballoon',
+77 silly cache add   rawSpec: '>= 0.2.1',
+77 silly cache add   spec: '>=0.2.1',
+77 silly cache add   type: 'range' }
+78 silly addNamed bitballoon@>=0.2.1
+79 verbose addNamed ">=0.2.1" is a valid semver range for bitballoon
+80 silly addNameRange { name: 'bitballoon', range: '>=0.2.1', hasData: false }
+81 silly mapToRegistry name bitballoon
+82 silly mapToRegistry using default registry
+83 silly mapToRegistry registry https://registry.npmjs.org/
+84 silly mapToRegistry uri https://registry.npmjs.org/bitballoon
+85 verbose addNameRange registry:https://registry.npmjs.org/bitballoon not in flight; fetching
+86 verbose request uri https://registry.npmjs.org/bitballoon
+87 verbose request no auth needed
+88 info attempt registry request try #1 at 12:01:57 PM
+89 verbose etag "AW260PG3DE19N0GSYII8VCUN7"
+90 http request GET https://registry.npmjs.org/bitballoon
+91 http 304 https://registry.npmjs.org/bitballoon
+92 verbose headers { date: 'Wed, 27 Apr 2016 11:01:57 GMT',
+92 verbose headers   via: '1.1 varnish',
+92 verbose headers   'cache-control': 'max-age=300',
+92 verbose headers   etag: '"AW260PG3DE19N0GSYII8VCUN7"',
+92 verbose headers   age: '0',
+92 verbose headers   connection: 'keep-alive',
+92 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+92 verbose headers   'x-cache': 'MISS',
+92 verbose headers   'x-cache-hits': '0',
+92 verbose headers   'x-timer': 'S1461754917.569599,VS0,VE704',
+92 verbose headers   vary: 'Accept-Encoding' }
+93 silly get cb [ 304,
+93 silly get   { date: 'Wed, 27 Apr 2016 11:01:57 GMT',
+93 silly get     via: '1.1 varnish',
+93 silly get     'cache-control': 'max-age=300',
+93 silly get     etag: '"AW260PG3DE19N0GSYII8VCUN7"',
+93 silly get     age: '0',
+93 silly get     connection: 'keep-alive',
+93 silly get     'x-served-by': 'cache-lcy1128-LCY',
+93 silly get     'x-cache': 'MISS',
+93 silly get     'x-cache-hits': '0',
+93 silly get     'x-timer': 'S1461754917.569599,VS0,VE704',
+93 silly get     vary: 'Accept-Encoding' } ]
+94 verbose etag https://registry.npmjs.org/bitballoon from cache
+95 verbose get saving bitballoon to /Users/iandenty/.npm/registry.npmjs.org/bitballoon/.cache.json
+96 silly addNameRange number 2 { name: 'bitballoon', range: '>=0.2.1', hasData: true }
+97 silly addNameRange versions [ 'bitballoon',
+97 silly addNameRange   [ '0.0.1',
+97 silly addNameRange     '0.0.2',
+97 silly addNameRange     '0.0.3',
+97 silly addNameRange     '0.0.4',
+97 silly addNameRange     '0.0.5',
+97 silly addNameRange     '0.0.6',
+97 silly addNameRange     '0.0.7',
+97 silly addNameRange     '0.0.8',
+97 silly addNameRange     '0.0.9',
+97 silly addNameRange     '0.1.0',
+97 silly addNameRange     '0.1.1',
+97 silly addNameRange     '0.1.2',
+97 silly addNameRange     '0.1.3',
+97 silly addNameRange     '0.1.4',
+97 silly addNameRange     '0.1.5',
+97 silly addNameRange     '0.1.6',
+97 silly addNameRange     '0.2.0',
+97 silly addNameRange     '0.2.1',
+97 silly addNameRange     '0.2.2' ] ]
+98 silly addNamed bitballoon@0.2.2
+99 verbose addNamed "0.2.2" is a plain semver version for bitballoon
+100 silly cache afterAdd bitballoon@0.2.2
+101 verbose afterAdd /Users/iandenty/.npm/bitballoon/0.2.2/package/package.json not in flight; writing
+102 verbose afterAdd /Users/iandenty/.npm/bitballoon/0.2.2/package/package.json written
+103 silly install resolved [ { author: { name: 'BitBalloon' },
+103 silly install resolved     name: 'bitballoon',
+103 silly install resolved     description: 'BitBalloon API client',
+103 silly install resolved     version: '0.2.2',
+103 silly install resolved     repository: { url: '' },
+103 silly install resolved     bin: { bitballoon: './bin/bitballoon' },
+103 silly install resolved     main: 'lib/bitballoon.js',
+103 silly install resolved     dependencies:
+103 silly install resolved      { 'base64-js': '>=0.0.4',
+103 silly install resolved        glob: '>=3.2.6',
+103 silly install resolved        'graceful-fs': '^3.0.4' },
+103 silly install resolved     devDependencies: { 'jasmine-node': '>=1.11.0', browserify: '>=2.34.3' },
+103 silly install resolved     optionalDependencies: {},
+103 silly install resolved     gitHead: '544404487d83fa8a18b24d32b1b21a57c49a47df',
+103 silly install resolved     _id: 'bitballoon@0.2.2',
+103 silly install resolved     scripts: {},
+103 silly install resolved     _shasum: '32448ff0904a391f12aeecafc2381ed12d52acfa',
+103 silly install resolved     _from: 'bitballoon@>=0.2.1',
+103 silly install resolved     _npmVersion: '2.5.1',
+103 silly install resolved     _nodeVersion: '0.12.0',
+103 silly install resolved     _npmUser: { name: 'biilmann', email: 'info@mathias-biilmann.net' },
+103 silly install resolved     maintainers: [ [Object] ],
+103 silly install resolved     dist:
+103 silly install resolved      { shasum: '32448ff0904a391f12aeecafc2381ed12d52acfa',
+103 silly install resolved        tarball: 'https://registry.npmjs.org/bitballoon/-/bitballoon-0.2.2.tgz' },
+103 silly install resolved     directories: {},
+103 silly install resolved     _resolved: 'https://registry.npmjs.org/bitballoon/-/bitballoon-0.2.2.tgz',
+103 silly install resolved     readme: 'ERROR: No README data found!' } ]
+104 info install bitballoon@0.2.2 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon
+105 info installOne bitballoon@0.2.2
+106 verbose installOne of bitballoon to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon not in flight; installing
+107 verbose lock using /Users/iandenty/.npm/_locks/bitballoon-e81c3e24c89a6ef3.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+108 silly install write writing bitballoon 0.2.2 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+109 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon
+110 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon is being purged from base /Users/iandenty/Sites/visualisations_explore
+111 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+112 verbose tar unpack /Users/iandenty/.npm/bitballoon/0.2.2/package.tgz
+113 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+114 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon is being purged
+115 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+116 silly gunzTarPerm modes [ '755', '644' ]
+117 silly gunzTarPerm extractEntry package.json
+118 silly gunzTarPerm extractEntry .npmignore
+119 silly gunzTarPerm extractEntry README.md
+120 silly gunzTarPerm extractEntry build.js
+121 silly gunzTarPerm extractEntry browser/bitballoon.js
+122 silly gunzTarPerm extractEntry lib/access-token.js
+123 silly gunzTarPerm extractEntry lib/deploy.js
+124 silly gunzTarPerm extractEntry lib/dns-record.js
+125 silly gunzTarPerm extractEntry lib/dns-zone.js
+126 silly gunzTarPerm extractEntry lib/client.js
+127 silly gunzTarPerm extractEntry lib/form.js
+128 silly gunzTarPerm extractEntry lib/model.js
+129 silly gunzTarPerm extractEntry lib/site.js
+130 silly gunzTarPerm extractEntry lib/snippet.js
+131 silly gunzTarPerm extractEntry lib/submission.js
+132 silly gunzTarPerm extractEntry lib/bitballoon.js
+133 silly gunzTarPerm extractEntry lib/user.js
+134 silly gunzTarPerm extractEntry lib/file.js
+135 silly gunzTarPerm extractEntry spec/bitballoon.spec.js
+136 silly gunzTarPerm extractEntry spec/files/site-dir/index.html
+137 silly gunzTarPerm extractEntry spec/files/site-dir.zip
+138 silly gunzTarPerm extractEntry spec/run.sh
+139 silly gunzTarPerm extractEntry spec/specRunner.html
+140 silly gunzTarPerm extractEntry bin/bitballoon
+141 silly gunzTarPerm extractEntry vendor/jasmine/jasmine-html.js
+142 silly gunzTarPerm extractEntry vendor/jasmine/jasmine.js
+143 silly gunzTarPerm extractEntry vendor/jasmine/MIT.LICENSE
+144 silly gunzTarPerm extractEntry vendor/jasmine/jasmine.css
+145 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/package.json
+146 info preinstall bitballoon@0.2.2
+147 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/package.json
+148 silly prepareForInstallMany adding base64-js@>=0.0.4 from bitballoon dependencies
+149 silly prepareForInstallMany adding glob@>=3.2.6 from bitballoon dependencies
+150 silly prepareForInstallMany adding graceful-fs@^3.0.4 from bitballoon dependencies
+151 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/package.json
+152 silly cache add args [ 'graceful-fs@^3.0.4', null ]
+153 verbose cache add spec graceful-fs@^3.0.4
+154 silly cache add parsed spec Result {
+154 silly cache add   raw: 'graceful-fs@^3.0.4',
+154 silly cache add   scope: null,
+154 silly cache add   name: 'graceful-fs',
+154 silly cache add   rawSpec: '^3.0.4',
+154 silly cache add   spec: '>=3.0.4 <4.0.0',
+154 silly cache add   type: 'range' }
+155 silly addNamed graceful-fs@>=3.0.4 <4.0.0
+156 verbose addNamed ">=3.0.4 <4.0.0" is a valid semver range for graceful-fs
+157 silly addNameRange { name: 'graceful-fs', range: '>=3.0.4 <4.0.0', hasData: false }
+158 silly mapToRegistry name graceful-fs
+159 silly mapToRegistry using default registry
+160 silly mapToRegistry registry https://registry.npmjs.org/
+161 silly mapToRegistry uri https://registry.npmjs.org/graceful-fs
+162 verbose addNameRange registry:https://registry.npmjs.org/graceful-fs not in flight; fetching
+163 silly cache add args [ 'base64-js@>=0.0.4', null ]
+164 verbose cache add spec base64-js@>=0.0.4
+165 silly cache add parsed spec Result {
+165 silly cache add   raw: 'base64-js@>=0.0.4',
+165 silly cache add   scope: null,
+165 silly cache add   name: 'base64-js',
+165 silly cache add   rawSpec: '>=0.0.4',
+165 silly cache add   spec: '>=0.0.4',
+165 silly cache add   type: 'range' }
+166 silly addNamed base64-js@>=0.0.4
+167 verbose addNamed ">=0.0.4" is a valid semver range for base64-js
+168 silly addNameRange { name: 'base64-js', range: '>=0.0.4', hasData: false }
+169 silly mapToRegistry name base64-js
+170 silly mapToRegistry using default registry
+171 silly mapToRegistry registry https://registry.npmjs.org/
+172 silly mapToRegistry uri https://registry.npmjs.org/base64-js
+173 verbose addNameRange registry:https://registry.npmjs.org/base64-js not in flight; fetching
+174 silly cache add args [ 'glob@>=3.2.6', null ]
+175 verbose cache add spec glob@>=3.2.6
+176 silly cache add parsed spec Result {
+176 silly cache add   raw: 'glob@>=3.2.6',
+176 silly cache add   scope: null,
+176 silly cache add   name: 'glob',
+176 silly cache add   rawSpec: '>=3.2.6',
+176 silly cache add   spec: '>=3.2.6',
+176 silly cache add   type: 'range' }
+177 silly addNamed glob@>=3.2.6
+178 verbose addNamed ">=3.2.6" is a valid semver range for glob
+179 silly addNameRange { name: 'glob', range: '>=3.2.6', hasData: false }
+180 silly mapToRegistry name glob
+181 silly mapToRegistry using default registry
+182 silly mapToRegistry registry https://registry.npmjs.org/
+183 silly mapToRegistry uri https://registry.npmjs.org/glob
+184 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+185 verbose request uri https://registry.npmjs.org/graceful-fs
+186 verbose request no auth needed
+187 info attempt registry request try #1 at 12:01:58 PM
+188 verbose etag "38NUI3LOQB8F5NWZ21M23N1B1"
+189 http request GET https://registry.npmjs.org/graceful-fs
+190 verbose request uri https://registry.npmjs.org/glob
+191 verbose request no auth needed
+192 info attempt registry request try #1 at 12:01:58 PM
+193 verbose etag "3OJRFDUUXGPIO3S6HPCDDKCBN"
+194 http request GET https://registry.npmjs.org/glob
+195 verbose request uri https://registry.npmjs.org/base64-js
+196 verbose request no auth needed
+197 info attempt registry request try #1 at 12:01:58 PM
+198 verbose etag "DE7IP3N2ZOSYM9WJFO7XTR2PZ"
+199 http request GET https://registry.npmjs.org/base64-js
+200 http 304 https://registry.npmjs.org/graceful-fs
+201 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+201 verbose headers   via: '1.1 varnish',
+201 verbose headers   'cache-control': 'max-age=300',
+201 verbose headers   etag: '"38NUI3LOQB8F5NWZ21M23N1B1"',
+201 verbose headers   age: '248',
+201 verbose headers   connection: 'keep-alive',
+201 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+201 verbose headers   'x-cache': 'HIT',
+201 verbose headers   'x-cache-hits': '26',
+201 verbose headers   'x-timer': 'S1461754918.415543,VS0,VE0',
+201 verbose headers   vary: 'Accept-Encoding' }
+202 silly get cb [ 304,
+202 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+202 silly get     via: '1.1 varnish',
+202 silly get     'cache-control': 'max-age=300',
+202 silly get     etag: '"38NUI3LOQB8F5NWZ21M23N1B1"',
+202 silly get     age: '248',
+202 silly get     connection: 'keep-alive',
+202 silly get     'x-served-by': 'cache-lcy1132-LCY',
+202 silly get     'x-cache': 'HIT',
+202 silly get     'x-cache-hits': '26',
+202 silly get     'x-timer': 'S1461754918.415543,VS0,VE0',
+202 silly get     vary: 'Accept-Encoding' } ]
+203 verbose etag https://registry.npmjs.org/graceful-fs from cache
+204 verbose get saving graceful-fs to /Users/iandenty/.npm/registry.npmjs.org/graceful-fs/.cache.json
+205 silly addNameRange number 2 { name: 'graceful-fs', range: '>=3.0.4 <4.0.0', hasData: true }
+206 silly addNameRange versions [ 'graceful-fs',
+206 silly addNameRange   [ '1.0.0',
+206 silly addNameRange     '1.0.1',
+206 silly addNameRange     '1.0.2',
+206 silly addNameRange     '1.1.0',
+206 silly addNameRange     '1.1.1',
+206 silly addNameRange     '1.1.2',
+206 silly addNameRange     '1.1.3',
+206 silly addNameRange     '1.1.4',
+206 silly addNameRange     '1.1.5',
+206 silly addNameRange     '1.1.6',
+206 silly addNameRange     '1.1.7',
+206 silly addNameRange     '1.1.8',
+206 silly addNameRange     '1.1.9',
+206 silly addNameRange     '1.1.10',
+206 silly addNameRange     '1.1.11',
+206 silly addNameRange     '1.1.12',
+206 silly addNameRange     '1.1.13',
+206 silly addNameRange     '1.1.14',
+206 silly addNameRange     '1.2.0',
+206 silly addNameRange     '1.2.1',
+206 silly addNameRange     '1.2.2',
+206 silly addNameRange     '1.2.3',
+206 silly addNameRange     '2.0.0',
+206 silly addNameRange     '2.0.1',
+206 silly addNameRange     '2.0.2',
+206 silly addNameRange     '2.0.3',
+206 silly addNameRange     '3.0.0',
+206 silly addNameRange     '3.0.1',
+206 silly addNameRange     '3.0.2',
+206 silly addNameRange     '3.0.3',
+206 silly addNameRange     '3.0.4',
+206 silly addNameRange     '3.0.5',
+206 silly addNameRange     '3.0.6',
+206 silly addNameRange     '3.0.7',
+206 silly addNameRange     '3.0.8',
+206 silly addNameRange     '4.1.0',
+206 silly addNameRange     '4.1.1',
+206 silly addNameRange     '4.1.2',
+206 silly addNameRange     '4.1.3' ] ]
+207 silly addNamed graceful-fs@3.0.8
+208 verbose addNamed "3.0.8" is a plain semver version for graceful-fs
+209 warn deprecated graceful-fs@3.0.8: graceful-fs version 3 and before will fail on newer node releases. Please update to graceful-fs@^4.0.0 as soon as possible.
+210 http 304 https://registry.npmjs.org/base64-js
+211 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+211 verbose headers   via: '1.1 varnish',
+211 verbose headers   'cache-control': 'max-age=300',
+211 verbose headers   etag: '"DE7IP3N2ZOSYM9WJFO7XTR2PZ"',
+211 verbose headers   age: '37',
+211 verbose headers   connection: 'keep-alive',
+211 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+211 verbose headers   'x-cache': 'HIT',
+211 verbose headers   'x-cache-hits': '1',
+211 verbose headers   'x-timer': 'S1461754918.420096,VS0,VE0',
+211 verbose headers   vary: 'Accept-Encoding' }
+212 silly get cb [ 304,
+212 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+212 silly get     via: '1.1 varnish',
+212 silly get     'cache-control': 'max-age=300',
+212 silly get     etag: '"DE7IP3N2ZOSYM9WJFO7XTR2PZ"',
+212 silly get     age: '37',
+212 silly get     connection: 'keep-alive',
+212 silly get     'x-served-by': 'cache-lcy1128-LCY',
+212 silly get     'x-cache': 'HIT',
+212 silly get     'x-cache-hits': '1',
+212 silly get     'x-timer': 'S1461754918.420096,VS0,VE0',
+212 silly get     vary: 'Accept-Encoding' } ]
+213 verbose etag https://registry.npmjs.org/base64-js from cache
+214 verbose get saving base64-js to /Users/iandenty/.npm/registry.npmjs.org/base64-js/.cache.json
+215 http 304 https://registry.npmjs.org/glob
+216 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+216 verbose headers   via: '1.1 varnish',
+216 verbose headers   'cache-control': 'max-age=300',
+216 verbose headers   etag: '"3OJRFDUUXGPIO3S6HPCDDKCBN"',
+216 verbose headers   age: '187',
+216 verbose headers   connection: 'keep-alive',
+216 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+216 verbose headers   'x-cache': 'HIT',
+216 verbose headers   'x-cache-hits': '31',
+216 verbose headers   'x-timer': 'S1461754918.420146,VS0,VE0',
+216 verbose headers   vary: 'Accept-Encoding' }
+217 silly get cb [ 304,
+217 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+217 silly get     via: '1.1 varnish',
+217 silly get     'cache-control': 'max-age=300',
+217 silly get     etag: '"3OJRFDUUXGPIO3S6HPCDDKCBN"',
+217 silly get     age: '187',
+217 silly get     connection: 'keep-alive',
+217 silly get     'x-served-by': 'cache-lcy1130-LCY',
+217 silly get     'x-cache': 'HIT',
+217 silly get     'x-cache-hits': '31',
+217 silly get     'x-timer': 'S1461754918.420146,VS0,VE0',
+217 silly get     vary: 'Accept-Encoding' } ]
+218 verbose etag https://registry.npmjs.org/glob from cache
+219 verbose get saving glob to /Users/iandenty/.npm/registry.npmjs.org/glob/.cache.json
+220 silly cache afterAdd graceful-fs@3.0.8
+221 verbose afterAdd /Users/iandenty/.npm/graceful-fs/3.0.8/package/package.json not in flight; writing
+222 silly addNameRange number 2 { name: 'base64-js', range: '>=0.0.4', hasData: true }
+223 silly addNameRange versions [ 'base64-js',
+223 silly addNameRange   [ '0.0.1',
+223 silly addNameRange     '0.0.2',
+223 silly addNameRange     '0.0.3',
+223 silly addNameRange     '0.0.4',
+223 silly addNameRange     '0.0.5',
+223 silly addNameRange     '0.0.6',
+223 silly addNameRange     '0.0.7',
+223 silly addNameRange     '0.0.8',
+223 silly addNameRange     '1.0.1',
+223 silly addNameRange     '1.0.2',
+223 silly addNameRange     '1.0.3',
+223 silly addNameRange     '1.0.4',
+223 silly addNameRange     '1.1.0',
+223 silly addNameRange     '1.1.1',
+223 silly addNameRange     '1.1.2' ] ]
+224 silly addNamed base64-js@1.1.2
+225 verbose addNamed "1.1.2" is a plain semver version for base64-js
+226 silly addNameRange number 2 { name: 'glob', range: '>=3.2.6', hasData: true }
+227 silly addNameRange versions [ 'glob',
+227 silly addNameRange   [ '1.1.0',
+227 silly addNameRange     '2.0.9',
+227 silly addNameRange     '2.0.8',
+227 silly addNameRange     '2.0.7',
+227 silly addNameRange     '2.1.0',
+227 silly addNameRange     '3.0.0',
+227 silly addNameRange     '3.0.1',
+227 silly addNameRange     '3.1.0',
+227 silly addNameRange     '3.1.1',
+227 silly addNameRange     '3.1.2',
+227 silly addNameRange     '3.1.3',
+227 silly addNameRange     '3.1.4',
+227 silly addNameRange     '3.1.5',
+227 silly addNameRange     '3.1.6',
+227 silly addNameRange     '3.1.7',
+227 silly addNameRange     '3.1.9',
+227 silly addNameRange     '3.1.10',
+227 silly addNameRange     '3.1.11',
+227 silly addNameRange     '3.1.12',
+227 silly addNameRange     '3.1.13',
+227 silly addNameRange     '3.1.14',
+227 silly addNameRange     '3.1.15',
+227 silly addNameRange     '3.1.16',
+227 silly addNameRange     '3.1.17',
+227 silly addNameRange     '3.1.18',
+227 silly addNameRange     '3.1.19',
+227 silly addNameRange     '3.1.20',
+227 silly addNameRange     '3.1.21',
+227 silly addNameRange     '3.2.0',
+227 silly addNameRange     '3.2.1',
+227 silly addNameRange     '3.2.3',
+227 silly addNameRange     '3.2.4',
+227 silly addNameRange     '3.2.5',
+227 silly addNameRange     '3.2.6',
+227 silly addNameRange     '3.2.7',
+227 silly addNameRange     '3.2.8',
+227 silly addNameRange     '3.2.9',
+227 silly addNameRange     '3.2.10',
+227 silly addNameRange     '3.2.11',
+227 silly addNameRange     '4.0.0',
+227 silly addNameRange     '4.0.1',
+227 silly addNameRange     '4.0.2',
+227 silly addNameRange     '4.0.3',
+227 silly addNameRange     '4.0.4',
+227 silly addNameRange     '4.0.5',
+227 silly addNameRange     '4.0.6',
+227 silly addNameRange     '4.1.2-beta',
+227 silly addNameRange     '4.1.2',
+227 silly addNameRange     '4.1.3',
+227 silly addNameRange     '4.1.4',
+227 silly addNameRange     '4.1.5',
+227 silly addNameRange     '4.1.6',
+227 silly addNameRange     '4.2.0',
+227 silly addNameRange     '4.2.1',
+227 silly addNameRange     '4.2.2',
+227 silly addNameRange     '4.3.0',
+227 silly addNameRange     '4.3.1',
+227 silly addNameRange     '4.3.2',
+227 silly addNameRange     '4.3.3',
+227 silly addNameRange     '4.3.4',
+227 silly addNameRange     '4.3.5',
+227 silly addNameRange     '4.4.0',
+227 silly addNameRange     '4.4.2',
+227 silly addNameRange     '4.5.0',
+227 silly addNameRange     '5.0.0',
+227 silly addNameRange     '4.5.1',
+227 silly addNameRange     '5.0.1',
+227 silly addNameRange     '4.5.2',
+227 silly addNameRange     '5.0.2',
+227 silly addNameRange     '4.5.3',
+227 silly addNameRange     '5.0.3',
+227 silly addNameRange     '5.0.4',
+227 silly addNameRange     '5.0.5',
+227 silly addNameRange     '5.0.6',
+227 silly addNameRange     '5.0.7',
+227 silly addNameRange     '5.0.9',
+227 silly addNameRange     '5.0.10',
+227 silly addNameRange     '5.0.11',
+227 silly addNameRange     '5.0.12',
+227 silly addNameRange     '5.0.13',
+227 silly addNameRange     '5.0.14',
+227 silly addNameRange     '5.0.15',
+227 silly addNameRange     '6.0.1',
+227 silly addNameRange     '6.0.2',
+227 silly addNameRange     '6.0.3',
+227 silly addNameRange     '6.0.4',
+227 silly addNameRange     '7.0.0',
+227 silly addNameRange     '7.0.1',
+227 silly addNameRange     '7.0.3' ] ]
+228 silly addNamed glob@7.0.3
+229 verbose addNamed "7.0.3" is a plain semver version for glob
+230 verbose afterAdd /Users/iandenty/.npm/graceful-fs/3.0.8/package/package.json written
+231 silly cache afterAdd glob@7.0.3
+232 verbose afterAdd /Users/iandenty/.npm/glob/7.0.3/package/package.json not in flight; writing
+233 silly cache afterAdd base64-js@1.1.2
+234 verbose afterAdd /Users/iandenty/.npm/base64-js/1.1.2/package/package.json not in flight; writing
+235 verbose afterAdd /Users/iandenty/.npm/glob/7.0.3/package/package.json written
+236 verbose afterAdd /Users/iandenty/.npm/base64-js/1.1.2/package/package.json written
+237 silly install resolved [ { author:
+237 silly install resolved      { name: 'Isaac Z. Schlueter',
+237 silly install resolved        email: 'i@izs.me',
+237 silly install resolved        url: 'http://blog.izs.me' },
+237 silly install resolved     name: 'graceful-fs',
+237 silly install resolved     description: 'A drop-in replacement for fs, making various improvements.',
+237 silly install resolved     version: '3.0.8',
+237 silly install resolved     repository:
+237 silly install resolved      { type: 'git',
+237 silly install resolved        url: 'git://github.com/isaacs/node-graceful-fs.git' },
+237 silly install resolved     main: 'graceful-fs.js',
+237 silly install resolved     engines: { node: '>=0.4.0' },
+237 silly install resolved     directories: { test: 'test' },
+237 silly install resolved     scripts: { test: 'tap test/*.js' },
+237 silly install resolved     keywords:
+237 silly install resolved      [ 'fs',
+237 silly install resolved        'module',
+237 silly install resolved        'reading',
+237 silly install resolved        'retry',
+237 silly install resolved        'retries',
+237 silly install resolved        'queue',
+237 silly install resolved        'error',
+237 silly install resolved        'errors',
+237 silly install resolved        'handling',
+237 silly install resolved        'EMFILE',
+237 silly install resolved        'EAGAIN',
+237 silly install resolved        'EINVAL',
+237 silly install resolved        'EPERM',
+237 silly install resolved        'EACCESS' ],
+237 silly install resolved     license: 'ISC',
+237 silly install resolved     devDependencies: { mkdirp: '^0.5.0', rimraf: '^2.2.8', tap: '^1.2.0' },
+237 silly install resolved     gitHead: '45c57aa5e323c35a985a525de6f0c9a6ef59e1f8',
+237 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-graceful-fs/issues' },
+237 silly install resolved     homepage: 'https://github.com/isaacs/node-graceful-fs#readme',
+237 silly install resolved     _id: 'graceful-fs@3.0.8',
+237 silly install resolved     _shasum: 'ce813e725fa82f7e6147d51c9a5ca68270551c22',
+237 silly install resolved     _from: 'graceful-fs@>=3.0.4 <4.0.0',
+237 silly install resolved     _npmVersion: '2.10.1',
+237 silly install resolved     _nodeVersion: '2.0.1',
+237 silly install resolved     _npmUser: { name: 'isaacs', email: 'isaacs@npmjs.com' },
+237 silly install resolved     dist:
+237 silly install resolved      { shasum: 'ce813e725fa82f7e6147d51c9a5ca68270551c22',
+237 silly install resolved        tarball: 'http://registry.npmjs.org/graceful-fs/-/graceful-fs-3.0.8.tgz' },
+237 silly install resolved     maintainers: [ [Object] ],
+237 silly install resolved     _resolved: 'https://registry.npmjs.org/graceful-fs/-/graceful-fs-3.0.8.tgz',
+237 silly install resolved     readme: 'ERROR: No README data found!' },
+237 silly install resolved   { author:
+237 silly install resolved      { name: 'Isaac Z. Schlueter',
+237 silly install resolved        email: 'i@izs.me',
+237 silly install resolved        url: 'http://blog.izs.me/' },
+237 silly install resolved     name: 'glob',
+237 silly install resolved     description: 'a little globber',
+237 silly install resolved     version: '7.0.3',
+237 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-glob.git' },
+237 silly install resolved     main: 'glob.js',
+237 silly install resolved     files: [ 'glob.js', 'sync.js', 'common.js' ],
+237 silly install resolved     engines: { node: '*' },
+237 silly install resolved     dependencies:
+237 silly install resolved      { inflight: '^1.0.4',
+237 silly install resolved        inherits: '2',
+237 silly install resolved        minimatch: '2 || 3',
+237 silly install resolved        once: '^1.3.0',
+237 silly install resolved        'path-is-absolute': '^1.0.0' },
+237 silly install resolved     devDependencies: { mkdirp: '0', rimraf: '^2.2.8', tap: '^5.7.0', tick: '0.0.6' },
+237 silly install resolved     scripts:
+237 silly install resolved      { prepublish: 'npm run benchclean',
+237 silly install resolved        profclean: 'rm -f v8.log profile.txt',
+237 silly install resolved        test: 'tap test/*.js --cov',
+237 silly install resolved        'test-regen': 'npm run profclean && TEST_REGEN=1 node test/00-setup.js',
+237 silly install resolved        bench: 'bash benchmark.sh',
+237 silly install resolved        prof: 'bash prof.sh && cat profile.txt',
+237 silly install resolved        benchclean: 'node benchclean.js' },
+237 silly install resolved     license: 'ISC',
+237 silly install resolved     gitHead: '2fc2278ab857c7df117213a2fb431de090be6353',
+237 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-glob/issues' },
+237 silly install resolved     homepage: 'https://github.com/isaacs/node-glob#readme',
+237 silly install resolved     _id: 'glob@7.0.3',
+237 silly install resolved     _shasum: '0aa235931a4a96ac13d60ffac2fb877bd6ed4f58',
+237 silly install resolved     _from: 'glob@>=3.2.6',
+237 silly install resolved     _npmVersion: '3.7.3',
+237 silly install resolved     _nodeVersion: '5.6.0',
+237 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+237 silly install resolved     dist:
+237 silly install resolved      { shasum: '0aa235931a4a96ac13d60ffac2fb877bd6ed4f58',
+237 silly install resolved        tarball: 'http://registry.npmjs.org/glob/-/glob-7.0.3.tgz' },
+237 silly install resolved     maintainers: [ [Object] ],
+237 silly install resolved     _npmOperationalInternal:
+237 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+237 silly install resolved        tmp: 'tmp/glob-7.0.3.tgz_1457166529288_0.7840580905321985' },
+237 silly install resolved     directories: {},
+237 silly install resolved     _resolved: 'https://registry.npmjs.org/glob/-/glob-7.0.3.tgz',
+237 silly install resolved     readme: 'ERROR: No README data found!' },
+237 silly install resolved   { author:
+237 silly install resolved      { name: 'T. Jameson Little',
+237 silly install resolved        email: 't.jameson.little@gmail.com' },
+237 silly install resolved     name: 'base64-js',
+237 silly install resolved     description: 'Base64 encoding/decoding in pure JS',
+237 silly install resolved     version: '1.1.2',
+237 silly install resolved     repository:
+237 silly install resolved      { type: 'git',
+237 silly install resolved        url: 'git://github.com/beatgammit/base64-js.git' },
+237 silly install resolved     main: 'lib/b64.js',
+237 silly install resolved     scripts:
+237 silly install resolved      { build: 'browserify -s base64js -r ./ | uglifyjs -m > base64js.min.js',
+237 silly install resolved        test: 'standard && tape test/*.js' },
+237 silly install resolved     license: 'MIT',
+237 silly install resolved     dependencies: {},
+237 silly install resolved     devDependencies:
+237 silly install resolved      { benchmark: '^2.1.0',
+237 silly install resolved        browserify: '^13.0.0',
+237 silly install resolved        standard: '^6.0.5',
+237 silly install resolved        tape: '4.x',
+237 silly install resolved        'uglify-js': '^2.6.2' },
+237 silly install resolved     gitHead: '75f9f00f6baeeae9c51e21f43c2a9c918978d52c',
+237 silly install resolved     bugs: { url: 'https://github.com/beatgammit/base64-js/issues' },
+237 silly install resolved     homepage: 'https://github.com/beatgammit/base64-js#readme',
+237 silly install resolved     _id: 'base64-js@1.1.2',
+237 silly install resolved     _shasum: 'd6400cac1c4c660976d90d07a04351d89395f5e8',
+237 silly install resolved     _from: 'base64-js@>=0.0.4',
+237 silly install resolved     _npmVersion: '2.14.20',
+237 silly install resolved     _nodeVersion: '4.4.1',
+237 silly install resolved     _npmUser: { name: 'feross', email: 'feross@feross.org' },
+237 silly install resolved     dist:
+237 silly install resolved      { shasum: 'd6400cac1c4c660976d90d07a04351d89395f5e8',
+237 silly install resolved        tarball: 'https://registry.npmjs.org/base64-js/-/base64-js-1.1.2.tgz' },
+237 silly install resolved     maintainers: [ [Object], [Object] ],
+237 silly install resolved     _npmOperationalInternal:
+237 silly install resolved      { host: 'packages-13-west.internal.npmjs.com',
+237 silly install resolved        tmp: 'tmp/base64-js-1.1.2.tgz_1458813298889_0.6030721089337021' },
+237 silly install resolved     directories: {},
+237 silly install resolved     _resolved: 'https://registry.npmjs.org/base64-js/-/base64-js-1.1.2.tgz',
+237 silly install resolved     readme: 'ERROR: No README data found!' } ]
+238 info install graceful-fs@3.0.8 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+239 info install glob@7.0.3 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+240 info install base64-js@1.1.2 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+241 info installOne graceful-fs@3.0.8
+242 verbose installOne of graceful-fs to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon not in flight; installing
+243 info installOne glob@7.0.3
+244 verbose installOne of glob to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon not in flight; installing
+245 info installOne base64-js@1.1.2
+246 verbose installOne of base64-js to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon not in flight; installing
+247 verbose lock using /Users/iandenty/.npm/_locks/graceful-fs-f9382964a075bbb9.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs
+248 silly install write writing graceful-fs 3.0.8 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs
+249 verbose lock using /Users/iandenty/.npm/_locks/base64-js-828315a75775e055.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js
+250 verbose lock using /Users/iandenty/.npm/_locks/glob-d2d19080b589bb72.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+251 silly install write writing base64-js 1.1.2 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js
+252 silly install write writing glob 7.0.3 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+253 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs
+254 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js
+255 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+256 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs is being purged from base /Users/iandenty/Sites/visualisations_explore
+257 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs
+258 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js is being purged from base /Users/iandenty/Sites/visualisations_explore
+259 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js
+260 verbose tar unpack /Users/iandenty/.npm/graceful-fs/3.0.8/package.tgz
+261 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs
+262 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs is being purged
+263 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs
+264 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob is being purged from base /Users/iandenty/Sites/visualisations_explore
+265 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+266 verbose tar unpack /Users/iandenty/.npm/base64-js/1.1.2/package.tgz
+267 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js
+268 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js is being purged
+269 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js
+270 silly gunzTarPerm modes [ '755', '644' ]
+271 verbose tar unpack /Users/iandenty/.npm/glob/7.0.3/package.tgz
+272 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+273 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob is being purged
+274 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+275 silly gunzTarPerm modes [ '755', '644' ]
+276 silly gunzTarPerm modes [ '755', '644' ]
+277 silly gunzTarPerm extractEntry package.json
+278 silly gunzTarPerm extractEntry package.json
+279 silly gunzTarPerm extractEntry package.json
+280 silly gunzTarPerm extractEntry README.md
+281 silly gunzTarPerm extractEntry LICENSE
+282 silly gunzTarPerm extractEntry common.js
+283 silly gunzTarPerm extractEntry glob.js
+284 silly gunzTarPerm extractEntry sync.js
+285 silly gunzTarPerm extractEntry changelog.md
+286 silly gunzTarPerm extractEntry .npmignore
+287 silly gunzTarPerm extractEntry README.md
+288 silly gunzTarPerm extractEntry .npmignore
+289 silly gunzTarPerm extractEntry README.md
+290 silly gunzTarPerm extractEntry base64js.min.js
+291 silly gunzTarPerm extractEntry .travis.yml
+292 silly gunzTarPerm extractEntry LICENSE
+293 silly gunzTarPerm extractEntry fs.js
+294 silly gunzTarPerm extractEntry LICENSE.MIT
+295 silly gunzTarPerm extractEntry bower.json
+296 silly gunzTarPerm extractEntry graceful-fs.js
+297 silly gunzTarPerm extractEntry polyfills.js
+298 silly gunzTarPerm extractEntry lib/b64.js
+299 silly gunzTarPerm extractEntry test/big-data.js
+300 silly gunzTarPerm extractEntry test/max-open.js
+301 silly gunzTarPerm extractEntry test/convert.js
+302 silly gunzTarPerm extractEntry test/open.js
+303 silly gunzTarPerm extractEntry test/readdir-sort.js
+304 silly gunzTarPerm extractEntry test/url-safe.js
+305 silly gunzTarPerm extractEntry test/write-then-read.js
+306 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/package.json
+307 info preinstall glob@7.0.3
+308 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/package.json
+309 silly prepareForInstallMany adding inflight@^1.0.4 from glob dependencies
+310 silly prepareForInstallMany adding inherits@2 from glob dependencies
+311 silly prepareForInstallMany adding minimatch@2 || 3 from glob dependencies
+312 silly prepareForInstallMany adding once@^1.3.0 from glob dependencies
+313 silly prepareForInstallMany adding path-is-absolute@^1.0.0 from glob dependencies
+314 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/package.json
+315 silly cache add args [ 'inherits@2', null ]
+316 verbose cache add spec inherits@2
+317 silly cache add parsed spec Result {
+317 silly cache add   raw: 'inherits@2',
+317 silly cache add   scope: null,
+317 silly cache add   name: 'inherits',
+317 silly cache add   rawSpec: '2',
+317 silly cache add   spec: '>=2.0.0 <3.0.0',
+317 silly cache add   type: 'range' }
+318 silly addNamed inherits@>=2.0.0 <3.0.0
+319 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for inherits
+320 silly addNameRange { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: false }
+321 silly mapToRegistry name inherits
+322 silly mapToRegistry using default registry
+323 silly mapToRegistry registry https://registry.npmjs.org/
+324 silly mapToRegistry uri https://registry.npmjs.org/inherits
+325 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+326 silly cache add args [ 'minimatch@2 || 3', null ]
+327 verbose cache add spec minimatch@2 || 3
+328 silly cache add parsed spec Result {
+328 silly cache add   raw: 'minimatch@2 || 3',
+328 silly cache add   scope: null,
+328 silly cache add   name: 'minimatch',
+328 silly cache add   rawSpec: '2 || 3',
+328 silly cache add   spec: '>=2.0.0 <3.0.0||>=3.0.0 <4.0.0',
+328 silly cache add   type: 'range' }
+329 silly addNamed minimatch@>=2.0.0 <3.0.0||>=3.0.0 <4.0.0
+330 verbose addNamed ">=2.0.0 <3.0.0||>=3.0.0 <4.0.0" is a valid semver range for minimatch
+331 silly addNameRange { name: 'minimatch',
+331 silly addNameRange   range: '>=2.0.0 <3.0.0||>=3.0.0 <4.0.0',
+331 silly addNameRange   hasData: false }
+332 silly mapToRegistry name minimatch
+333 silly mapToRegistry using default registry
+334 silly mapToRegistry registry https://registry.npmjs.org/
+335 silly mapToRegistry uri https://registry.npmjs.org/minimatch
+336 verbose addNameRange registry:https://registry.npmjs.org/minimatch not in flight; fetching
+337 silly cache add args [ 'once@^1.3.0', null ]
+338 verbose cache add spec once@^1.3.0
+339 silly cache add parsed spec Result {
+339 silly cache add   raw: 'once@^1.3.0',
+339 silly cache add   scope: null,
+339 silly cache add   name: 'once',
+339 silly cache add   rawSpec: '^1.3.0',
+339 silly cache add   spec: '>=1.3.0 <2.0.0',
+339 silly cache add   type: 'range' }
+340 silly addNamed once@>=1.3.0 <2.0.0
+341 verbose addNamed ">=1.3.0 <2.0.0" is a valid semver range for once
+342 silly addNameRange { name: 'once', range: '>=1.3.0 <2.0.0', hasData: false }
+343 silly mapToRegistry name once
+344 silly mapToRegistry using default registry
+345 silly mapToRegistry registry https://registry.npmjs.org/
+346 silly mapToRegistry uri https://registry.npmjs.org/once
+347 verbose addNameRange registry:https://registry.npmjs.org/once not in flight; fetching
+348 silly cache add args [ 'path-is-absolute@^1.0.0', null ]
+349 verbose cache add spec path-is-absolute@^1.0.0
+350 silly cache add parsed spec Result {
+350 silly cache add   raw: 'path-is-absolute@^1.0.0',
+350 silly cache add   scope: null,
+350 silly cache add   name: 'path-is-absolute',
+350 silly cache add   rawSpec: '^1.0.0',
+350 silly cache add   spec: '>=1.0.0 <2.0.0',
+350 silly cache add   type: 'range' }
+351 silly addNamed path-is-absolute@>=1.0.0 <2.0.0
+352 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for path-is-absolute
+353 silly addNameRange { name: 'path-is-absolute',
+353 silly addNameRange   range: '>=1.0.0 <2.0.0',
+353 silly addNameRange   hasData: false }
+354 silly mapToRegistry name path-is-absolute
+355 silly mapToRegistry using default registry
+356 silly mapToRegistry registry https://registry.npmjs.org/
+357 silly mapToRegistry uri https://registry.npmjs.org/path-is-absolute
+358 verbose addNameRange registry:https://registry.npmjs.org/path-is-absolute not in flight; fetching
+359 silly cache add args [ 'inflight@^1.0.4', null ]
+360 verbose cache add spec inflight@^1.0.4
+361 silly cache add parsed spec Result {
+361 silly cache add   raw: 'inflight@^1.0.4',
+361 silly cache add   scope: null,
+361 silly cache add   name: 'inflight',
+361 silly cache add   rawSpec: '^1.0.4',
+361 silly cache add   spec: '>=1.0.4 <2.0.0',
+361 silly cache add   type: 'range' }
+362 silly addNamed inflight@>=1.0.4 <2.0.0
+363 verbose addNamed ">=1.0.4 <2.0.0" is a valid semver range for inflight
+364 silly addNameRange { name: 'inflight', range: '>=1.0.4 <2.0.0', hasData: false }
+365 silly mapToRegistry name inflight
+366 silly mapToRegistry using default registry
+367 silly mapToRegistry registry https://registry.npmjs.org/
+368 silly mapToRegistry uri https://registry.npmjs.org/inflight
+369 verbose addNameRange registry:https://registry.npmjs.org/inflight not in flight; fetching
+370 verbose request uri https://registry.npmjs.org/inherits
+371 verbose request no auth needed
+372 info attempt registry request try #1 at 12:01:58 PM
+373 verbose etag "9C23BNETE30UZVYRVML0QUTBX"
+374 http request GET https://registry.npmjs.org/inherits
+375 verbose request uri https://registry.npmjs.org/minimatch
+376 verbose request no auth needed
+377 info attempt registry request try #1 at 12:01:58 PM
+378 verbose etag "DFZODLEATQAZ2N0BZOZDSZYIR"
+379 http request GET https://registry.npmjs.org/minimatch
+380 verbose request uri https://registry.npmjs.org/once
+381 verbose request no auth needed
+382 info attempt registry request try #1 at 12:01:58 PM
+383 verbose etag "19BC5SB4QCK4KR5ZAJCMUBZ3M"
+384 http request GET https://registry.npmjs.org/once
+385 verbose request uri https://registry.npmjs.org/path-is-absolute
+386 verbose request no auth needed
+387 info attempt registry request try #1 at 12:01:58 PM
+388 verbose etag "BN5VZYARJTFIZINEV94ZMOHSE"
+389 http request GET https://registry.npmjs.org/path-is-absolute
+390 verbose request uri https://registry.npmjs.org/inflight
+391 verbose request no auth needed
+392 info attempt registry request try #1 at 12:01:58 PM
+393 verbose etag "AYD7KENJNHXM5Z0WKMT2D06HW"
+394 http request GET https://registry.npmjs.org/inflight
+395 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs/package.json
+396 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js/package.json
+397 info preinstall graceful-fs@3.0.8
+398 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs/package.json
+399 info preinstall base64-js@1.1.2
+400 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js/package.json
+401 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs/package.json
+402 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js/package.json
+403 silly install resolved []
+404 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs
+405 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs
+406 silly install resolved []
+407 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js
+408 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js
+409 info linkStuff graceful-fs@3.0.8
+410 silly linkStuff graceful-fs@3.0.8 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules as its parent node_modules
+411 info linkStuff base64-js@1.1.2
+412 silly linkStuff base64-js@1.1.2 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules as its parent node_modules
+413 verbose linkBins graceful-fs@3.0.8
+414 verbose linkMans graceful-fs@3.0.8
+415 verbose rebuildBundles graceful-fs@3.0.8
+416 info install graceful-fs@3.0.8
+417 verbose linkBins base64-js@1.1.2
+418 verbose linkMans base64-js@1.1.2
+419 verbose rebuildBundles base64-js@1.1.2
+420 info postinstall graceful-fs@3.0.8
+421 info install base64-js@1.1.2
+422 info postinstall base64-js@1.1.2
+423 verbose unlock done using /Users/iandenty/.npm/_locks/graceful-fs-f9382964a075bbb9.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/graceful-fs
+424 http 304 https://registry.npmjs.org/inherits
+425 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+425 verbose headers   via: '1.1 varnish',
+425 verbose headers   'cache-control': 'max-age=300',
+425 verbose headers   etag: '"9C23BNETE30UZVYRVML0QUTBX"',
+425 verbose headers   age: '74',
+425 verbose headers   connection: 'keep-alive',
+425 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+425 verbose headers   'x-cache': 'HIT',
+425 verbose headers   'x-cache-hits': '13',
+425 verbose headers   'x-timer': 'S1461754918.549774,VS0,VE0',
+425 verbose headers   vary: 'Accept-Encoding' }
+426 silly get cb [ 304,
+426 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+426 silly get     via: '1.1 varnish',
+426 silly get     'cache-control': 'max-age=300',
+426 silly get     etag: '"9C23BNETE30UZVYRVML0QUTBX"',
+426 silly get     age: '74',
+426 silly get     connection: 'keep-alive',
+426 silly get     'x-served-by': 'cache-lcy1132-LCY',
+426 silly get     'x-cache': 'HIT',
+426 silly get     'x-cache-hits': '13',
+426 silly get     'x-timer': 'S1461754918.549774,VS0,VE0',
+426 silly get     vary: 'Accept-Encoding' } ]
+427 verbose etag https://registry.npmjs.org/inherits from cache
+428 verbose get saving inherits to /Users/iandenty/.npm/registry.npmjs.org/inherits/.cache.json
+429 verbose unlock done using /Users/iandenty/.npm/_locks/base64-js-828315a75775e055.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/base64-js
+430 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.0 <3.0.0', hasData: true }
+431 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2' ] ]
+432 silly addNamed inherits@2.0.1
+433 verbose addNamed "2.0.1" is a plain semver version for inherits
+434 silly cache afterAdd inherits@2.0.1
+435 verbose afterAdd /Users/iandenty/.npm/inherits/2.0.1/package/package.json not in flight; writing
+436 verbose afterAdd /Users/iandenty/.npm/inherits/2.0.1/package/package.json written
+437 http 304 https://registry.npmjs.org/path-is-absolute
+438 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+438 verbose headers   via: '1.1 varnish',
+438 verbose headers   'cache-control': 'max-age=300',
+438 verbose headers   etag: '"BN5VZYARJTFIZINEV94ZMOHSE"',
+438 verbose headers   age: '36',
+438 verbose headers   connection: 'keep-alive',
+438 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
+438 verbose headers   'x-cache': 'HIT',
+438 verbose headers   'x-cache-hits': '4',
+438 verbose headers   'x-timer': 'S1461754918.560298,VS0,VE0',
+438 verbose headers   vary: 'Accept-Encoding' }
+439 silly get cb [ 304,
+439 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+439 silly get     via: '1.1 varnish',
+439 silly get     'cache-control': 'max-age=300',
+439 silly get     etag: '"BN5VZYARJTFIZINEV94ZMOHSE"',
+439 silly get     age: '36',
+439 silly get     connection: 'keep-alive',
+439 silly get     'x-served-by': 'cache-lcy1127-LCY',
+439 silly get     'x-cache': 'HIT',
+439 silly get     'x-cache-hits': '4',
+439 silly get     'x-timer': 'S1461754918.560298,VS0,VE0',
+439 silly get     vary: 'Accept-Encoding' } ]
+440 verbose etag https://registry.npmjs.org/path-is-absolute from cache
+441 verbose get saving path-is-absolute to /Users/iandenty/.npm/registry.npmjs.org/path-is-absolute/.cache.json
+442 http 304 https://registry.npmjs.org/minimatch
+443 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+443 verbose headers   via: '1.1 varnish',
+443 verbose headers   'cache-control': 'max-age=300',
+443 verbose headers   etag: '"DFZODLEATQAZ2N0BZOZDSZYIR"',
+443 verbose headers   age: '58',
+443 verbose headers   connection: 'keep-alive',
+443 verbose headers   'x-served-by': 'cache-lcy1125-LCY',
+443 verbose headers   'x-cache': 'HIT',
+443 verbose headers   'x-cache-hits': '9',
+443 verbose headers   'x-timer': 'S1461754918.560077,VS0,VE0',
+443 verbose headers   vary: 'Accept-Encoding' }
+444 silly get cb [ 304,
+444 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+444 silly get     via: '1.1 varnish',
+444 silly get     'cache-control': 'max-age=300',
+444 silly get     etag: '"DFZODLEATQAZ2N0BZOZDSZYIR"',
+444 silly get     age: '58',
+444 silly get     connection: 'keep-alive',
+444 silly get     'x-served-by': 'cache-lcy1125-LCY',
+444 silly get     'x-cache': 'HIT',
+444 silly get     'x-cache-hits': '9',
+444 silly get     'x-timer': 'S1461754918.560077,VS0,VE0',
+444 silly get     vary: 'Accept-Encoding' } ]
+445 verbose etag https://registry.npmjs.org/minimatch from cache
+446 verbose get saving minimatch to /Users/iandenty/.npm/registry.npmjs.org/minimatch/.cache.json
+447 http 304 https://registry.npmjs.org/once
+448 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+448 verbose headers   via: '1.1 varnish',
+448 verbose headers   'cache-control': 'max-age=300',
+448 verbose headers   etag: '"19BC5SB4QCK4KR5ZAJCMUBZ3M"',
+448 verbose headers   age: '133',
+448 verbose headers   connection: 'keep-alive',
+448 verbose headers   'x-served-by': 'cache-lcy1125-LCY',
+448 verbose headers   'x-cache': 'HIT',
+448 verbose headers   'x-cache-hits': '15',
+448 verbose headers   'x-timer': 'S1461754918.560249,VS0,VE0',
+448 verbose headers   vary: 'Accept-Encoding' }
+449 silly get cb [ 304,
+449 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+449 silly get     via: '1.1 varnish',
+449 silly get     'cache-control': 'max-age=300',
+449 silly get     etag: '"19BC5SB4QCK4KR5ZAJCMUBZ3M"',
+449 silly get     age: '133',
+449 silly get     connection: 'keep-alive',
+449 silly get     'x-served-by': 'cache-lcy1125-LCY',
+449 silly get     'x-cache': 'HIT',
+449 silly get     'x-cache-hits': '15',
+449 silly get     'x-timer': 'S1461754918.560249,VS0,VE0',
+449 silly get     vary: 'Accept-Encoding' } ]
+450 verbose etag https://registry.npmjs.org/once from cache
+451 verbose get saving once to /Users/iandenty/.npm/registry.npmjs.org/once/.cache.json
+452 http 304 https://registry.npmjs.org/inflight
+453 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+453 verbose headers   via: '1.1 varnish',
+453 verbose headers   'cache-control': 'max-age=300',
+453 verbose headers   etag: '"AYD7KENJNHXM5Z0WKMT2D06HW"',
+453 verbose headers   age: '103',
+453 verbose headers   connection: 'keep-alive',
+453 verbose headers   'x-served-by': 'cache-lcy1131-LCY',
+453 verbose headers   'x-cache': 'HIT',
+453 verbose headers   'x-cache-hits': '14',
+453 verbose headers   'x-timer': 'S1461754918.562738,VS0,VE0',
+453 verbose headers   vary: 'Accept-Encoding' }
+454 silly get cb [ 304,
+454 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+454 silly get     via: '1.1 varnish',
+454 silly get     'cache-control': 'max-age=300',
+454 silly get     etag: '"AYD7KENJNHXM5Z0WKMT2D06HW"',
+454 silly get     age: '103',
+454 silly get     connection: 'keep-alive',
+454 silly get     'x-served-by': 'cache-lcy1131-LCY',
+454 silly get     'x-cache': 'HIT',
+454 silly get     'x-cache-hits': '14',
+454 silly get     'x-timer': 'S1461754918.562738,VS0,VE0',
+454 silly get     vary: 'Accept-Encoding' } ]
+455 verbose etag https://registry.npmjs.org/inflight from cache
+456 verbose get saving inflight to /Users/iandenty/.npm/registry.npmjs.org/inflight/.cache.json
+457 silly addNameRange number 2 { name: 'path-is-absolute',
+457 silly addNameRange   range: '>=1.0.0 <2.0.0',
+457 silly addNameRange   hasData: true }
+458 silly addNameRange versions [ 'path-is-absolute', [ '1.0.0' ] ]
+459 silly addNamed path-is-absolute@1.0.0
+460 verbose addNamed "1.0.0" is a plain semver version for path-is-absolute
+461 silly addNameRange number 2 { name: 'minimatch',
+461 silly addNameRange   range: '>=2.0.0 <3.0.0||>=3.0.0 <4.0.0',
+461 silly addNameRange   hasData: true }
+462 silly addNameRange versions [ 'minimatch',
+462 silly addNameRange   [ '0.0.1',
+462 silly addNameRange     '0.0.2',
+462 silly addNameRange     '0.0.4',
+462 silly addNameRange     '0.0.5',
+462 silly addNameRange     '0.1.1',
+462 silly addNameRange     '0.1.2',
+462 silly addNameRange     '0.1.3',
+462 silly addNameRange     '0.1.4',
+462 silly addNameRange     '0.1.5',
+462 silly addNameRange     '0.2.0',
+462 silly addNameRange     '0.2.2',
+462 silly addNameRange     '0.2.3',
+462 silly addNameRange     '0.2.4',
+462 silly addNameRange     '0.2.5',
+462 silly addNameRange     '0.2.6',
+462 silly addNameRange     '0.2.7',
+462 silly addNameRange     '0.2.8',
+462 silly addNameRange     '0.2.9',
+462 silly addNameRange     '0.2.10',
+462 silly addNameRange     '0.2.11',
+462 silly addNameRange     '0.2.12',
+462 silly addNameRange     '0.2.13',
+462 silly addNameRange     '0.2.14',
+462 silly addNameRange     '0.3.0',
+462 silly addNameRange     '0.4.0',
+462 silly addNameRange     '1.0.0',
+462 silly addNameRange     '2.0.0',
+462 silly addNameRange     '2.0.1',
+462 silly addNameRange     '2.0.2',
+462 silly addNameRange     '2.0.3',
+462 silly addNameRange     '2.0.4',
+462 silly addNameRange     '2.0.5',
+462 silly addNameRange     '2.0.6',
+462 silly addNameRange     '2.0.7',
+462 silly addNameRange     '2.0.8',
+462 silly addNameRange     '2.0.9',
+462 silly addNameRange     '2.0.10',
+462 silly addNameRange     '3.0.0' ] ]
+463 silly addNamed minimatch@3.0.0
+464 verbose addNamed "3.0.0" is a plain semver version for minimatch
+465 silly addNameRange number 2 { name: 'once', range: '>=1.3.0 <2.0.0', hasData: true }
+466 silly addNameRange versions [ 'once',
+466 silly addNameRange   [ '1.1.1', '1.2.0', '1.3.0', '1.3.1', '1.3.2', '1.3.3' ] ]
+467 silly addNamed once@1.3.3
+468 verbose addNamed "1.3.3" is a plain semver version for once
+469 silly cache afterAdd path-is-absolute@1.0.0
+470 verbose afterAdd /Users/iandenty/.npm/path-is-absolute/1.0.0/package/package.json not in flight; writing
+471 silly cache afterAdd minimatch@3.0.0
+472 verbose afterAdd /Users/iandenty/.npm/minimatch/3.0.0/package/package.json not in flight; writing
+473 silly cache afterAdd once@1.3.3
+474 verbose afterAdd /Users/iandenty/.npm/once/1.3.3/package/package.json not in flight; writing
+475 silly addNameRange number 2 { name: 'inflight', range: '>=1.0.4 <2.0.0', hasData: true }
+476 silly addNameRange versions [ 'inflight', [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4' ] ]
+477 silly addNamed inflight@1.0.4
+478 verbose addNamed "1.0.4" is a plain semver version for inflight
+479 verbose afterAdd /Users/iandenty/.npm/path-is-absolute/1.0.0/package/package.json written
+480 verbose afterAdd /Users/iandenty/.npm/once/1.3.3/package/package.json written
+481 verbose afterAdd /Users/iandenty/.npm/minimatch/3.0.0/package/package.json written
+482 silly cache afterAdd inflight@1.0.4
+483 verbose afterAdd /Users/iandenty/.npm/inflight/1.0.4/package/package.json not in flight; writing
+484 verbose afterAdd /Users/iandenty/.npm/inflight/1.0.4/package/package.json written
+485 silly install resolved [ { name: 'inherits',
+485 silly install resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+485 silly install resolved     version: '2.0.1',
+485 silly install resolved     keywords:
+485 silly install resolved      [ 'inheritance',
+485 silly install resolved        'class',
+485 silly install resolved        'klass',
+485 silly install resolved        'oop',
+485 silly install resolved        'object-oriented',
+485 silly install resolved        'inherits',
+485 silly install resolved        'browser',
+485 silly install resolved        'browserify' ],
+485 silly install resolved     main: './inherits.js',
+485 silly install resolved     browser: './inherits_browser.js',
+485 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits.git' },
+485 silly install resolved     license: 'ISC',
+485 silly install resolved     scripts: { test: 'node test' },
+485 silly install resolved     readme: 'Browser-friendly inheritance fully compatible with standard node.js\n[inherits](http://nodejs.org/api/util.html#util_util_inherits_constructor_superconstructor).\n\nThis package exports standard `inherits` from node.js `util` module in\nnode environment, but also provides alternative browser-friendly\nimplementation through [browser\nfield](https://gist.github.com/shtylman/4339901). Alternative\nimplementation is a literal copy of standard one located in standalone\nmodule to avoid requiring of `util`. It also has a shim for old\nbrowsers with no `Object.create` support.\n\nWhile keeping you sure you are using standard `inherits`\nimplementation in node.js environment, it allows bundlers such as\n[browserify](https://github.com/substack/node-browserify) to not\ninclude full `util` package to your client code if all you need is\njust `inherits` function. It worth, because browser shim for `util`\npackage is large and `inherits` is often the single function you need\nfrom it.\n\nIt\'s recommended to use this package instead of\n`require(\'util\').inherits` for any code that has chances to be used\nnot only in node.js but in browser too.\n\n## usage\n\n```js\nvar inherits = require(\'inherits\');\n// then use exactly as the standard one\n```\n\n## note on version ~1.0\n\nVersion ~1.0 had completely different motivation and is not compatible\nneither with 2.0 nor with standard node.js `inherits`.\n\nIf you are using version ~1.0 and planning to switch to ~2.0, be\ncareful:\n\n* new version uses `super_` instead of `super` for referencing\n  superclass\n* new version overwrites current prototype while old one preserves any\n  existing fields on it\n',
+485 silly install resolved     readmeFilename: 'README.md',
+485 silly install resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+485 silly install resolved     _id: 'inherits@2.0.1',
+485 silly install resolved     dist:
+485 silly install resolved      { shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+485 silly install resolved        tarball: 'http://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz' },
+485 silly install resolved     _from: 'inherits@>=2.0.0 <3.0.0',
+485 silly install resolved     _npmVersion: '1.3.8',
+485 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+485 silly install resolved     maintainers: [ [Object] ],
+485 silly install resolved     directories: {},
+485 silly install resolved     _shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+485 silly install resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz',
+485 silly install resolved     homepage: 'https://github.com/isaacs/inherits' },
+485 silly install resolved   { name: 'path-is-absolute',
+485 silly install resolved     version: '1.0.0',
+485 silly install resolved     description: 'Node.js 0.12 path.isAbsolute() ponyfill',
+485 silly install resolved     license: 'MIT',
+485 silly install resolved     repository:
+485 silly install resolved      { type: 'git',
+485 silly install resolved        url: 'git+https://github.com/sindresorhus/path-is-absolute.git' },
+485 silly install resolved     author:
+485 silly install resolved      { name: 'Sindre Sorhus',
+485 silly install resolved        email: 'sindresorhus@gmail.com',
+485 silly install resolved        url: 'sindresorhus.com' },
+485 silly install resolved     engines: { node: '>=0.10.0' },
+485 silly install resolved     scripts: { test: 'node test.js' },
+485 silly install resolved     files: [ 'index.js' ],
+485 silly install resolved     keywords:
+485 silly install resolved      [ 'path',
+485 silly install resolved        'paths',
+485 silly install resolved        'file',
+485 silly install resolved        'dir',
+485 silly install resolved        'absolute',
+485 silly install resolved        'isabsolute',
+485 silly install resolved        'is-absolute',
+485 silly install resolved        'built-in',
+485 silly install resolved        'util',
+485 silly install resolved        'utils',
+485 silly install resolved        'core',
+485 silly install resolved        'ponyfill',
+485 silly install resolved        'polyfill',
+485 silly install resolved        'shim',
+485 silly install resolved        'is',
+485 silly install resolved        'detect',
+485 silly install resolved        'check' ],
+485 silly install resolved     gitHead: '7a76a0c9f2263192beedbe0a820e4d0baee5b7a1',
+485 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/path-is-absolute/issues' },
+485 silly install resolved     homepage: 'https://github.com/sindresorhus/path-is-absolute',
+485 silly install resolved     _id: 'path-is-absolute@1.0.0',
+485 silly install resolved     _shasum: '263dada66ab3f2fb10bf7f9d24dd8f3e570ef912',
+485 silly install resolved     _from: 'path-is-absolute@>=1.0.0 <2.0.0',
+485 silly install resolved     _npmVersion: '2.5.1',
+485 silly install resolved     _nodeVersion: '0.12.0',
+485 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+485 silly install resolved     maintainers: [ [Object] ],
+485 silly install resolved     dist:
+485 silly install resolved      { shasum: '263dada66ab3f2fb10bf7f9d24dd8f3e570ef912',
+485 silly install resolved        tarball: 'http://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz' },
+485 silly install resolved     directories: {},
+485 silly install resolved     _resolved: 'https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz',
+485 silly install resolved     readme: 'ERROR: No README data found!' },
+485 silly install resolved   { name: 'once',
+485 silly install resolved     version: '1.3.3',
+485 silly install resolved     description: 'Run a function exactly one time',
+485 silly install resolved     main: 'once.js',
+485 silly install resolved     directories: { test: 'test' },
+485 silly install resolved     dependencies: { wrappy: '1' },
+485 silly install resolved     devDependencies: { tap: '^1.2.0' },
+485 silly install resolved     scripts: { test: 'tap test/*.js' },
+485 silly install resolved     files: [ 'once.js' ],
+485 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/once.git' },
+485 silly install resolved     keywords: [ 'once', 'function', 'one', 'single' ],
+485 silly install resolved     author:
+485 silly install resolved      { name: 'Isaac Z. Schlueter',
+485 silly install resolved        email: 'i@izs.me',
+485 silly install resolved        url: 'http://blog.izs.me/' },
+485 silly install resolved     license: 'ISC',
+485 silly install resolved     gitHead: '2ad558657e17fafd24803217ba854762842e4178',
+485 silly install resolved     bugs: { url: 'https://github.com/isaacs/once/issues' },
+485 silly install resolved     homepage: 'https://github.com/isaacs/once#readme',
+485 silly install resolved     _id: 'once@1.3.3',
+485 silly install resolved     _shasum: 'b2e261557ce4c314ec8304f3fa82663e4297ca20',
+485 silly install resolved     _from: 'once@>=1.3.0 <2.0.0',
+485 silly install resolved     _npmVersion: '3.3.2',
+485 silly install resolved     _nodeVersion: '4.0.0',
+485 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+485 silly install resolved     dist:
+485 silly install resolved      { shasum: 'b2e261557ce4c314ec8304f3fa82663e4297ca20',
+485 silly install resolved        tarball: 'http://registry.npmjs.org/once/-/once-1.3.3.tgz' },
+485 silly install resolved     maintainers: [ [Object] ],
+485 silly install resolved     _resolved: 'https://registry.npmjs.org/once/-/once-1.3.3.tgz',
+485 silly install resolved     readme: 'ERROR: No README data found!' },
+485 silly install resolved   { author:
+485 silly install resolved      { name: 'Isaac Z. Schlueter',
+485 silly install resolved        email: 'i@izs.me',
+485 silly install resolved        url: 'http://blog.izs.me' },
+485 silly install resolved     name: 'minimatch',
+485 silly install resolved     description: 'a glob matcher in javascript',
+485 silly install resolved     version: '3.0.0',
+485 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/minimatch.git' },
+485 silly install resolved     main: 'minimatch.js',
+485 silly install resolved     scripts:
+485 silly install resolved      { posttest: 'standard minimatch.js test/*.js',
+485 silly install resolved        test: 'tap test/*.js' },
+485 silly install resolved     engines: { node: '*' },
+485 silly install resolved     dependencies: { 'brace-expansion': '^1.0.0' },
+485 silly install resolved     devDependencies: { standard: '^3.7.2', tap: '^1.2.0' },
+485 silly install resolved     license: 'ISC',
+485 silly install resolved     files: [ 'minimatch.js' ],
+485 silly install resolved     gitHead: '270dbea567f0af6918cb18103e98c612aa717a20',
+485 silly install resolved     bugs: { url: 'https://github.com/isaacs/minimatch/issues' },
+485 silly install resolved     homepage: 'https://github.com/isaacs/minimatch#readme',
+485 silly install resolved     _id: 'minimatch@3.0.0',
+485 silly install resolved     _shasum: '5236157a51e4f004c177fb3c527ff7dd78f0ef83',
+485 silly install resolved     _from: 'minimatch@>=2.0.0 <3.0.0||>=3.0.0 <4.0.0',
+485 silly install resolved     _npmVersion: '3.3.2',
+485 silly install resolved     _nodeVersion: '4.0.0',
+485 silly install resolved     _npmUser: { name: 'isaacs', email: 'isaacs@npmjs.com' },
+485 silly install resolved     dist:
+485 silly install resolved      { shasum: '5236157a51e4f004c177fb3c527ff7dd78f0ef83',
+485 silly install resolved        tarball: 'http://registry.npmjs.org/minimatch/-/minimatch-3.0.0.tgz' },
+485 silly install resolved     maintainers: [ [Object] ],
+485 silly install resolved     directories: {},
+485 silly install resolved     _resolved: 'https://registry.npmjs.org/minimatch/-/minimatch-3.0.0.tgz',
+485 silly install resolved     readme: 'ERROR: No README data found!' },
+485 silly install resolved   { name: 'inflight',
+485 silly install resolved     version: '1.0.4',
+485 silly install resolved     description: 'Add callbacks to requests in flight to avoid async duplication',
+485 silly install resolved     main: 'inflight.js',
+485 silly install resolved     dependencies: { once: '^1.3.0', wrappy: '1' },
+485 silly install resolved     devDependencies: { tap: '^0.4.10' },
+485 silly install resolved     scripts: { test: 'tap test.js' },
+485 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inflight.git' },
+485 silly install resolved     author:
+485 silly install resolved      { name: 'Isaac Z. Schlueter',
+485 silly install resolved        email: 'i@izs.me',
+485 silly install resolved        url: 'http://blog.izs.me/' },
+485 silly install resolved     bugs: { url: 'https://github.com/isaacs/inflight/issues' },
+485 silly install resolved     homepage: 'https://github.com/isaacs/inflight',
+485 silly install resolved     license: 'ISC',
+485 silly install resolved     gitHead: 'c7b5531d572a867064d4a1da9e013e8910b7d1ba',
+485 silly install resolved     _id: 'inflight@1.0.4',
+485 silly install resolved     _shasum: '6cbb4521ebd51ce0ec0a936bfd7657ef7e9b172a',
+485 silly install resolved     _from: 'inflight@>=1.0.4 <2.0.0',
+485 silly install resolved     _npmVersion: '2.1.3',
+485 silly install resolved     _nodeVersion: '0.10.32',
+485 silly install resolved     _npmUser: { name: 'othiym23', email: 'ogd@aoaioxxysz.net' },
+485 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+485 silly install resolved     dist:
+485 silly install resolved      { shasum: '6cbb4521ebd51ce0ec0a936bfd7657ef7e9b172a',
+485 silly install resolved        tarball: 'http://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz' },
+485 silly install resolved     directories: {},
+485 silly install resolved     _resolved: 'https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz',
+485 silly install resolved     readme: 'ERROR: No README data found!' } ]
+486 info install inherits@2.0.1 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+487 info install path-is-absolute@1.0.0 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+488 info install once@1.3.3 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+489 info install minimatch@3.0.0 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+490 info install inflight@1.0.4 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+491 info installOne inherits@2.0.1
+492 verbose installOne of inherits to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob not in flight; installing
+493 info installOne path-is-absolute@1.0.0
+494 verbose installOne of path-is-absolute to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob not in flight; installing
+495 info installOne once@1.3.3
+496 verbose installOne of once to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob not in flight; installing
+497 info installOne minimatch@3.0.0
+498 verbose installOne of minimatch to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob not in flight; installing
+499 info installOne inflight@1.0.4
+500 verbose installOne of inflight to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob not in flight; installing
+501 verbose lock using /Users/iandenty/.npm/_locks/inherits-233ae4e073906085.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits
+502 verbose lock using /Users/iandenty/.npm/_locks/path-is-absolute-e40cecfd25fa77b4.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute
+503 silly install write writing inherits 2.0.1 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits
+504 verbose lock using /Users/iandenty/.npm/_locks/once-236a0b52b52a4fdc.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+505 silly install write writing path-is-absolute 1.0.0 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute
+506 verbose lock using /Users/iandenty/.npm/_locks/minimatch-18843803a2579633.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+507 verbose lock using /Users/iandenty/.npm/_locks/inflight-e874907560f0f7f2.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+508 silly install write writing once 1.3.3 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+509 silly install write writing minimatch 3.0.0 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+510 silly install write writing inflight 1.0.4 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+511 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits
+512 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute
+513 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+514 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+515 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+516 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits is being purged from base /Users/iandenty/Sites/visualisations_explore
+517 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits
+518 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute is being purged from base /Users/iandenty/Sites/visualisations_explore
+519 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute
+520 verbose tar unpack /Users/iandenty/.npm/inherits/2.0.1/package.tgz
+521 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits
+522 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits is being purged
+523 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits
+524 verbose tar unpack /Users/iandenty/.npm/path-is-absolute/1.0.0/package.tgz
+525 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute
+526 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute is being purged
+527 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute
+528 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once is being purged from base /Users/iandenty/Sites/visualisations_explore
+529 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+530 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch is being purged from base /Users/iandenty/Sites/visualisations_explore
+531 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+532 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight is being purged from base /Users/iandenty/Sites/visualisations_explore
+533 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+534 silly gunzTarPerm modes [ '755', '644' ]
+535 silly gunzTarPerm modes [ '755', '644' ]
+536 verbose tar unpack /Users/iandenty/.npm/once/1.3.3/package.tgz
+537 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+538 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once is being purged
+539 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+540 verbose tar unpack /Users/iandenty/.npm/minimatch/3.0.0/package.tgz
+541 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+542 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch is being purged
+543 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+544 verbose tar unpack /Users/iandenty/.npm/inflight/1.0.4/package.tgz
+545 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+546 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight is being purged
+547 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+548 silly gunzTarPerm modes [ '755', '644' ]
+549 silly gunzTarPerm modes [ '755', '644' ]
+550 silly gunzTarPerm modes [ '755', '644' ]
+551 silly gunzTarPerm extractEntry package.json
+552 silly gunzTarPerm extractEntry package.json
+553 silly gunzTarPerm extractEntry package.json
+554 silly gunzTarPerm extractEntry package.json
+555 silly gunzTarPerm extractEntry package.json
+556 silly gunzTarPerm extractEntry README.md
+557 silly gunzTarPerm extractEntry LICENSE
+558 silly gunzTarPerm extractEntry index.js
+559 silly gunzTarPerm extractEntry license
+560 silly gunzTarPerm extractEntry README.md
+561 silly gunzTarPerm extractEntry LICENSE
+562 silly gunzTarPerm extractEntry README.md
+563 silly gunzTarPerm extractEntry LICENSE
+564 silly gunzTarPerm extractEntry README.md
+565 silly gunzTarPerm extractEntry LICENSE
+566 silly gunzTarPerm extractEntry inherits.js
+567 silly gunzTarPerm extractEntry inherits_browser.js
+568 silly gunzTarPerm extractEntry readme.md
+569 silly gunzTarPerm extractEntry once.js
+570 silly gunzTarPerm extractEntry minimatch.js
+571 silly gunzTarPerm extractEntry inflight.js
+572 silly gunzTarPerm extractEntry test.js
+573 silly gunzTarPerm extractEntry test.js
+574 silly gunzTarPerm extractEntry .eslintrc
+575 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute/package.json
+576 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/package.json
+577 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/package.json
+578 info preinstall once@1.3.3
+579 info preinstall path-is-absolute@1.0.0
+580 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/package.json
+581 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute/package.json
+582 info preinstall minimatch@3.0.0
+583 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/package.json
+584 silly prepareForInstallMany adding wrappy@1 from once dependencies
+585 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/package.json
+586 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute/package.json
+587 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits/package.json
+588 silly prepareForInstallMany adding brace-expansion@^1.0.0 from minimatch dependencies
+589 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/package.json
+590 info preinstall inherits@2.0.1
+591 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/package.json
+592 silly install resolved []
+593 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute
+594 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute
+595 silly cache add args [ 'wrappy@1', null ]
+596 verbose cache add spec wrappy@1
+597 silly cache add parsed spec Result {
+597 silly cache add   raw: 'wrappy@1',
+597 silly cache add   scope: null,
+597 silly cache add   name: 'wrappy',
+597 silly cache add   rawSpec: '1',
+597 silly cache add   spec: '>=1.0.0 <2.0.0',
+597 silly cache add   type: 'range' }
+598 silly addNamed wrappy@>=1.0.0 <2.0.0
+599 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for wrappy
+600 silly addNameRange { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: false }
+601 silly mapToRegistry name wrappy
+602 silly mapToRegistry using default registry
+603 silly mapToRegistry registry https://registry.npmjs.org/
+604 silly mapToRegistry uri https://registry.npmjs.org/wrappy
+605 verbose addNameRange registry:https://registry.npmjs.org/wrappy not in flight; fetching
+606 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits/package.json
+607 silly cache add args [ 'brace-expansion@^1.0.0', null ]
+608 verbose cache add spec brace-expansion@^1.0.0
+609 silly cache add parsed spec Result {
+609 silly cache add   raw: 'brace-expansion@^1.0.0',
+609 silly cache add   scope: null,
+609 silly cache add   name: 'brace-expansion',
+609 silly cache add   rawSpec: '^1.0.0',
+609 silly cache add   spec: '>=1.0.0 <2.0.0',
+609 silly cache add   type: 'range' }
+610 silly addNamed brace-expansion@>=1.0.0 <2.0.0
+611 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for brace-expansion
+612 silly addNameRange { name: 'brace-expansion',
+612 silly addNameRange   range: '>=1.0.0 <2.0.0',
+612 silly addNameRange   hasData: false }
+613 silly mapToRegistry name brace-expansion
+614 silly mapToRegistry using default registry
+615 silly mapToRegistry registry https://registry.npmjs.org/
+616 silly mapToRegistry uri https://registry.npmjs.org/brace-expansion
+617 verbose addNameRange registry:https://registry.npmjs.org/brace-expansion not in flight; fetching
+618 info preinstall inflight@1.0.4
+619 verbose request uri https://registry.npmjs.org/wrappy
+620 verbose request no auth needed
+621 info attempt registry request try #1 at 12:01:58 PM
+622 verbose etag "BC9JAW6E2PQBS8NYYKIYUR99F"
+623 http request GET https://registry.npmjs.org/wrappy
+624 info linkStuff path-is-absolute@1.0.0
+625 silly linkStuff path-is-absolute@1.0.0 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules as its parent node_modules
+626 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/package.json
+627 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits/package.json
+628 verbose request uri https://registry.npmjs.org/brace-expansion
+629 verbose request no auth needed
+630 info attempt registry request try #1 at 12:01:58 PM
+631 verbose etag "9MB4GW1V361IHI8FF58TT6D7W"
+632 http request GET https://registry.npmjs.org/brace-expansion
+633 verbose linkBins path-is-absolute@1.0.0
+634 verbose linkMans path-is-absolute@1.0.0
+635 verbose rebuildBundles path-is-absolute@1.0.0
+636 info install path-is-absolute@1.0.0
+637 silly prepareForInstallMany adding wrappy@1 from inflight dependencies
+638 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/package.json
+639 silly install resolved []
+640 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits
+641 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits
+642 info postinstall path-is-absolute@1.0.0
+643 verbose unlock done using /Users/iandenty/.npm/_locks/path-is-absolute-e40cecfd25fa77b4.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/path-is-absolute
+644 info linkStuff inherits@2.0.1
+645 silly linkStuff inherits@2.0.1 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules as its parent node_modules
+646 silly cache add args [ 'wrappy@1', null ]
+647 verbose cache add spec wrappy@1
+648 silly cache add parsed spec Result {
+648 silly cache add   raw: 'wrappy@1',
+648 silly cache add   scope: null,
+648 silly cache add   name: 'wrappy',
+648 silly cache add   rawSpec: '1',
+648 silly cache add   spec: '>=1.0.0 <2.0.0',
+648 silly cache add   type: 'range' }
+649 silly addNamed wrappy@>=1.0.0 <2.0.0
+650 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for wrappy
+651 silly addNameRange { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: false }
+652 silly mapToRegistry name wrappy
+653 silly mapToRegistry using default registry
+654 silly mapToRegistry registry https://registry.npmjs.org/
+655 silly mapToRegistry uri https://registry.npmjs.org/wrappy
+656 verbose addNameRange registry:https://registry.npmjs.org/wrappy already in flight; waiting
+657 verbose linkBins inherits@2.0.1
+658 verbose linkMans inherits@2.0.1
+659 verbose rebuildBundles inherits@2.0.1
+660 info install inherits@2.0.1
+661 info postinstall inherits@2.0.1
+662 verbose unlock done using /Users/iandenty/.npm/_locks/inherits-233ae4e073906085.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inherits
+663 http 304 https://registry.npmjs.org/brace-expansion
+664 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+664 verbose headers   via: '1.1 varnish',
+664 verbose headers   'cache-control': 'max-age=300',
+664 verbose headers   etag: '"9MB4GW1V361IHI8FF58TT6D7W"',
+664 verbose headers   age: '149',
+664 verbose headers   connection: 'keep-alive',
+664 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
+664 verbose headers   'x-cache': 'HIT',
+664 verbose headers   'x-cache-hits': '24',
+664 verbose headers   'x-timer': 'S1461754918.676200,VS0,VE0',
+664 verbose headers   vary: 'Accept-Encoding' }
+665 silly get cb [ 304,
+665 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+665 silly get     via: '1.1 varnish',
+665 silly get     'cache-control': 'max-age=300',
+665 silly get     etag: '"9MB4GW1V361IHI8FF58TT6D7W"',
+665 silly get     age: '149',
+665 silly get     connection: 'keep-alive',
+665 silly get     'x-served-by': 'cache-lcy1127-LCY',
+665 silly get     'x-cache': 'HIT',
+665 silly get     'x-cache-hits': '24',
+665 silly get     'x-timer': 'S1461754918.676200,VS0,VE0',
+665 silly get     vary: 'Accept-Encoding' } ]
+666 verbose etag https://registry.npmjs.org/brace-expansion from cache
+667 verbose get saving brace-expansion to /Users/iandenty/.npm/registry.npmjs.org/brace-expansion/.cache.json
+668 silly addNameRange number 2 { name: 'brace-expansion',
+668 silly addNameRange   range: '>=1.0.0 <2.0.0',
+668 silly addNameRange   hasData: true }
+669 silly addNameRange versions [ 'brace-expansion',
+669 silly addNameRange   [ '0.0.0', '1.0.0', '1.0.1', '1.1.0', '1.1.1', '1.1.2', '1.1.3' ] ]
+670 silly addNamed brace-expansion@1.1.3
+671 verbose addNamed "1.1.3" is a plain semver version for brace-expansion
+672 http 304 https://registry.npmjs.org/wrappy
+673 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+673 verbose headers   via: '1.1 varnish',
+673 verbose headers   'cache-control': 'max-age=300',
+673 verbose headers   etag: '"BC9JAW6E2PQBS8NYYKIYUR99F"',
+673 verbose headers   age: '40',
+673 verbose headers   connection: 'keep-alive',
+673 verbose headers   'x-served-by': 'cache-lcy1124-LCY',
+673 verbose headers   'x-cache': 'HIT',
+673 verbose headers   'x-cache-hits': '4',
+673 verbose headers   'x-timer': 'S1461754918.677697,VS0,VE0',
+673 verbose headers   vary: 'Accept-Encoding' }
+674 silly get cb [ 304,
+674 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+674 silly get     via: '1.1 varnish',
+674 silly get     'cache-control': 'max-age=300',
+674 silly get     etag: '"BC9JAW6E2PQBS8NYYKIYUR99F"',
+674 silly get     age: '40',
+674 silly get     connection: 'keep-alive',
+674 silly get     'x-served-by': 'cache-lcy1124-LCY',
+674 silly get     'x-cache': 'HIT',
+674 silly get     'x-cache-hits': '4',
+674 silly get     'x-timer': 'S1461754918.677697,VS0,VE0',
+674 silly get     vary: 'Accept-Encoding' } ]
+675 verbose etag https://registry.npmjs.org/wrappy from cache
+676 verbose get saving wrappy to /Users/iandenty/.npm/registry.npmjs.org/wrappy/.cache.json
+677 silly cache afterAdd brace-expansion@1.1.3
+678 verbose afterAdd /Users/iandenty/.npm/brace-expansion/1.1.3/package/package.json not in flight; writing
+679 verbose afterAdd /Users/iandenty/.npm/brace-expansion/1.1.3/package/package.json written
+680 silly install resolved [ { name: 'brace-expansion',
+680 silly install resolved     description: 'Brace expansion as known from sh/bash',
+680 silly install resolved     version: '1.1.3',
+680 silly install resolved     repository:
+680 silly install resolved      { type: 'git',
+680 silly install resolved        url: 'git://github.com/juliangruber/brace-expansion.git' },
+680 silly install resolved     homepage: 'https://github.com/juliangruber/brace-expansion',
+680 silly install resolved     main: 'index.js',
+680 silly install resolved     scripts: { test: 'tape test/*.js', gentest: 'bash test/generate.sh' },
+680 silly install resolved     dependencies: { 'balanced-match': '^0.3.0', 'concat-map': '0.0.1' },
+680 silly install resolved     devDependencies: { tape: '4.4.0' },
+680 silly install resolved     keywords: [],
+680 silly install resolved     author:
+680 silly install resolved      { name: 'Julian Gruber',
+680 silly install resolved        email: 'mail@juliangruber.com',
+680 silly install resolved        url: 'http://juliangruber.com' },
+680 silly install resolved     license: 'MIT',
+680 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+680 silly install resolved     gitHead: 'f0da1bb668e655f67b6b2d660c6e1c19e2a6f231',
+680 silly install resolved     bugs: { url: 'https://github.com/juliangruber/brace-expansion/issues' },
+680 silly install resolved     _id: 'brace-expansion@1.1.3',
+680 silly install resolved     _shasum: '46bff50115d47fc9ab89854abb87d98078a10991',
+680 silly install resolved     _from: 'brace-expansion@>=1.0.0 <2.0.0',
+680 silly install resolved     _npmVersion: '3.3.12',
+680 silly install resolved     _nodeVersion: '5.5.0',
+680 silly install resolved     _npmUser: { name: 'juliangruber', email: 'julian@juliangruber.com' },
+680 silly install resolved     dist:
+680 silly install resolved      { shasum: '46bff50115d47fc9ab89854abb87d98078a10991',
+680 silly install resolved        tarball: 'http://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.3.tgz' },
+680 silly install resolved     maintainers: [ [Object], [Object] ],
+680 silly install resolved     _npmOperationalInternal:
+680 silly install resolved      { host: 'packages-6-west.internal.npmjs.com',
+680 silly install resolved        tmp: 'tmp/brace-expansion-1.1.3.tgz_1455216688668_0.948847763473168' },
+680 silly install resolved     directories: {},
+680 silly install resolved     _resolved: 'https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.3.tgz',
+680 silly install resolved     readme: 'ERROR: No README data found!' } ]
+681 info install brace-expansion@1.1.3 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+682 info installOne brace-expansion@1.1.3
+683 verbose installOne of brace-expansion to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch not in flight; installing
+684 silly addNameRange number 2 { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: true }
+685 silly addNameRange versions [ 'wrappy', [ '1.0.0', '1.0.1' ] ]
+686 silly addNamed wrappy@1.0.1
+687 verbose addNamed "1.0.1" is a plain semver version for wrappy
+688 silly addNameRange number 2 { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: true }
+689 silly addNameRange versions [ 'wrappy', [ '1.0.0', '1.0.1' ] ]
+690 silly addNamed wrappy@1.0.1
+691 verbose addNamed "1.0.1" is a plain semver version for wrappy
+692 verbose lock using /Users/iandenty/.npm/_locks/brace-expansion-f799eb02d4bcbfe5.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+693 silly install write writing brace-expansion 1.1.3 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+694 silly cache afterAdd wrappy@1.0.1
+695 verbose afterAdd /Users/iandenty/.npm/wrappy/1.0.1/package/package.json not in flight; writing
+696 silly cache afterAdd wrappy@1.0.1
+697 verbose afterAdd /Users/iandenty/.npm/wrappy/1.0.1/package/package.json already in flight; not writing
+698 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+699 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion is being purged from base /Users/iandenty/Sites/visualisations_explore
+700 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+701 verbose tar unpack /Users/iandenty/.npm/brace-expansion/1.1.3/package.tgz
+702 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+703 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion is being purged
+704 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+705 silly gunzTarPerm modes [ '755', '644' ]
+706 verbose afterAdd /Users/iandenty/.npm/wrappy/1.0.1/package/package.json written
+707 silly install resolved [ { name: 'wrappy',
+707 silly install resolved     version: '1.0.1',
+707 silly install resolved     description: 'Callback wrapping utility',
+707 silly install resolved     main: 'wrappy.js',
+707 silly install resolved     directories: { test: 'test' },
+707 silly install resolved     dependencies: {},
+707 silly install resolved     devDependencies: { tap: '^0.4.12' },
+707 silly install resolved     scripts: { test: 'tap test/*.js' },
+707 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/npm/wrappy.git' },
+707 silly install resolved     author:
+707 silly install resolved      { name: 'Isaac Z. Schlueter',
+707 silly install resolved        email: 'i@izs.me',
+707 silly install resolved        url: 'http://blog.izs.me/' },
+707 silly install resolved     license: 'ISC',
+707 silly install resolved     bugs: { url: 'https://github.com/npm/wrappy/issues' },
+707 silly install resolved     homepage: 'https://github.com/npm/wrappy',
+707 silly install resolved     gitHead: '006a8cbac6b99988315834c207896eed71fd069a',
+707 silly install resolved     _id: 'wrappy@1.0.1',
+707 silly install resolved     _shasum: '1e65969965ccbc2db4548c6b84a6f2c5aedd4739',
+707 silly install resolved     _from: 'wrappy@>=1.0.0 <2.0.0',
+707 silly install resolved     _npmVersion: '2.0.0',
+707 silly install resolved     _nodeVersion: '0.10.31',
+707 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+707 silly install resolved     maintainers: [ [Object] ],
+707 silly install resolved     dist:
+707 silly install resolved      { shasum: '1e65969965ccbc2db4548c6b84a6f2c5aedd4739',
+707 silly install resolved        tarball: 'http://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz' },
+707 silly install resolved     _resolved: 'https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz',
+707 silly install resolved     readme: 'ERROR: No README data found!' } ]
+708 info install wrappy@1.0.1 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+709 info installOne wrappy@1.0.1
+710 verbose installOne of wrappy to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once not in flight; installing
+711 silly install resolved [ { name: 'wrappy',
+711 silly install resolved     version: '1.0.1',
+711 silly install resolved     description: 'Callback wrapping utility',
+711 silly install resolved     main: 'wrappy.js',
+711 silly install resolved     directories: { test: 'test' },
+711 silly install resolved     dependencies: {},
+711 silly install resolved     devDependencies: { tap: '^0.4.12' },
+711 silly install resolved     scripts: { test: 'tap test/*.js' },
+711 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/npm/wrappy.git' },
+711 silly install resolved     author:
+711 silly install resolved      { name: 'Isaac Z. Schlueter',
+711 silly install resolved        email: 'i@izs.me',
+711 silly install resolved        url: 'http://blog.izs.me/' },
+711 silly install resolved     license: 'ISC',
+711 silly install resolved     bugs: { url: 'https://github.com/npm/wrappy/issues' },
+711 silly install resolved     homepage: 'https://github.com/npm/wrappy',
+711 silly install resolved     gitHead: '006a8cbac6b99988315834c207896eed71fd069a',
+711 silly install resolved     _id: 'wrappy@1.0.1',
+711 silly install resolved     _shasum: '1e65969965ccbc2db4548c6b84a6f2c5aedd4739',
+711 silly install resolved     _from: 'wrappy@>=1.0.0 <2.0.0',
+711 silly install resolved     _npmVersion: '2.0.0',
+711 silly install resolved     _nodeVersion: '0.10.31',
+711 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+711 silly install resolved     maintainers: [ [Object] ],
+711 silly install resolved     dist:
+711 silly install resolved      { shasum: '1e65969965ccbc2db4548c6b84a6f2c5aedd4739',
+711 silly install resolved        tarball: 'http://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz' },
+711 silly install resolved     _resolved: 'https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz',
+711 silly install resolved     readme: 'ERROR: No README data found!' } ]
+712 info install wrappy@1.0.1 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+713 info installOne wrappy@1.0.1
+714 verbose installOne of wrappy to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight not in flight; installing
+715 verbose lock using /Users/iandenty/.npm/_locks/wrappy-4bdf373fe10dc9b7.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy
+716 verbose lock using /Users/iandenty/.npm/_locks/wrappy-98282a827dfe339d.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy
+717 silly install write writing wrappy 1.0.1 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy
+718 silly install write writing wrappy 1.0.1 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy
+719 silly gunzTarPerm extractEntry package.json
+720 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy
+721 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy
+722 silly gunzTarPerm extractEntry .npmignore
+723 silly gunzTarPerm extractEntry README.md
+724 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy is being purged from base /Users/iandenty/Sites/visualisations_explore
+725 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy
+726 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy is being purged from base /Users/iandenty/Sites/visualisations_explore
+727 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy
+728 verbose tar unpack /Users/iandenty/.npm/wrappy/1.0.1/package.tgz
+729 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy
+730 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy is being purged
+731 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy
+732 verbose tar unpack /Users/iandenty/.npm/wrappy/1.0.1/package.tgz
+733 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy
+734 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy is being purged
+735 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy
+736 silly gunzTarPerm modes [ '755', '644' ]
+737 silly gunzTarPerm modes [ '755', '644' ]
+738 silly gunzTarPerm extractEntry package.json
+739 silly gunzTarPerm extractEntry package.json
+740 silly gunzTarPerm extractEntry example.js
+741 silly gunzTarPerm extractEntry index.js
+742 silly gunzTarPerm extractEntry README.md
+743 silly gunzTarPerm extractEntry LICENSE
+744 silly gunzTarPerm extractEntry README.md
+745 silly gunzTarPerm extractEntry LICENSE
+746 silly gunzTarPerm extractEntry wrappy.js
+747 silly gunzTarPerm extractEntry test/basic.js
+748 silly gunzTarPerm extractEntry wrappy.js
+749 silly gunzTarPerm extractEntry test/basic.js
+750 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json
+751 info preinstall brace-expansion@1.1.3
+752 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json
+753 silly prepareForInstallMany adding balanced-match@^0.3.0 from brace-expansion dependencies
+754 silly prepareForInstallMany adding concat-map@0.0.1 from brace-expansion dependencies
+755 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json
+756 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json
+757 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy/package.json
+758 info preinstall wrappy@1.0.1
+759 info preinstall wrappy@1.0.1
+760 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json
+761 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy/package.json
+762 silly cache add args [ 'balanced-match@^0.3.0', null ]
+763 verbose cache add spec balanced-match@^0.3.0
+764 silly cache add parsed spec Result {
+764 silly cache add   raw: 'balanced-match@^0.3.0',
+764 silly cache add   scope: null,
+764 silly cache add   name: 'balanced-match',
+764 silly cache add   rawSpec: '^0.3.0',
+764 silly cache add   spec: '>=0.3.0 <0.4.0',
+764 silly cache add   type: 'range' }
+765 silly addNamed balanced-match@>=0.3.0 <0.4.0
+766 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for balanced-match
+767 silly addNameRange { name: 'balanced-match',
+767 silly addNameRange   range: '>=0.3.0 <0.4.0',
+767 silly addNameRange   hasData: false }
+768 silly mapToRegistry name balanced-match
+769 silly mapToRegistry using default registry
+770 silly mapToRegistry registry https://registry.npmjs.org/
+771 silly mapToRegistry uri https://registry.npmjs.org/balanced-match
+772 verbose addNameRange registry:https://registry.npmjs.org/balanced-match not in flight; fetching
+773 silly cache add args [ 'concat-map@0.0.1', null ]
+774 verbose cache add spec concat-map@0.0.1
+775 silly cache add parsed spec Result {
+775 silly cache add   raw: 'concat-map@0.0.1',
+775 silly cache add   scope: null,
+775 silly cache add   name: 'concat-map',
+775 silly cache add   rawSpec: '0.0.1',
+775 silly cache add   spec: '0.0.1',
+775 silly cache add   type: 'version' }
+776 silly addNamed concat-map@0.0.1
+777 verbose addNamed "0.0.1" is a plain semver version for concat-map
+778 silly mapToRegistry name concat-map
+779 silly mapToRegistry using default registry
+780 silly mapToRegistry registry https://registry.npmjs.org/
+781 silly mapToRegistry uri https://registry.npmjs.org/concat-map
+782 verbose addNameVersion registry:https://registry.npmjs.org/concat-map not in flight; fetching
+783 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json
+784 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy/package.json
+785 verbose request uri https://registry.npmjs.org/balanced-match
+786 verbose request no auth needed
+787 info attempt registry request try #1 at 12:01:58 PM
+788 verbose etag "2UCIXDVPHPVG0UBO9EWI4V9XC"
+789 http request GET https://registry.npmjs.org/balanced-match
+790 verbose request uri https://registry.npmjs.org/concat-map
+791 verbose request no auth needed
+792 info attempt registry request try #1 at 12:01:58 PM
+793 verbose etag "66LI2B4AH1989LYDFSL4P944A"
+794 http request GET https://registry.npmjs.org/concat-map
+795 silly install resolved []
+796 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy
+797 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy
+798 silly install resolved []
+799 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy
+800 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy
+801 info linkStuff wrappy@1.0.1
+802 silly linkStuff wrappy@1.0.1 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules as its parent node_modules
+803 info linkStuff wrappy@1.0.1
+804 silly linkStuff wrappy@1.0.1 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules as its parent node_modules
+805 verbose linkBins wrappy@1.0.1
+806 verbose linkMans wrappy@1.0.1
+807 verbose rebuildBundles wrappy@1.0.1
+808 verbose linkBins wrappy@1.0.1
+809 verbose linkMans wrappy@1.0.1
+810 verbose rebuildBundles wrappy@1.0.1
+811 info install wrappy@1.0.1
+812 info install wrappy@1.0.1
+813 info postinstall wrappy@1.0.1
+814 info postinstall wrappy@1.0.1
+815 verbose unlock done using /Users/iandenty/.npm/_locks/wrappy-98282a827dfe339d.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight/node_modules/wrappy
+816 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+817 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+818 verbose unlock done using /Users/iandenty/.npm/_locks/wrappy-4bdf373fe10dc9b7.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once/node_modules/wrappy
+819 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+820 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+821 info linkStuff inflight@1.0.4
+822 silly linkStuff inflight@1.0.4 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules as its parent node_modules
+823 info linkStuff once@1.3.3
+824 silly linkStuff once@1.3.3 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules as its parent node_modules
+825 verbose linkBins inflight@1.0.4
+826 verbose linkMans inflight@1.0.4
+827 verbose rebuildBundles inflight@1.0.4
+828 verbose linkBins once@1.3.3
+829 verbose linkMans once@1.3.3
+830 verbose rebuildBundles once@1.3.3
+831 verbose rebuildBundles [ 'wrappy' ]
+832 info install inflight@1.0.4
+833 verbose rebuildBundles [ 'wrappy' ]
+834 info install once@1.3.3
+835 info postinstall inflight@1.0.4
+836 info postinstall once@1.3.3
+837 verbose unlock done using /Users/iandenty/.npm/_locks/inflight-e874907560f0f7f2.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/inflight
+838 verbose unlock done using /Users/iandenty/.npm/_locks/once-236a0b52b52a4fdc.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/once
+839 http 304 https://registry.npmjs.org/balanced-match
+840 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+840 verbose headers   via: '1.1 varnish',
+840 verbose headers   'cache-control': 'max-age=300',
+840 verbose headers   etag: '"2UCIXDVPHPVG0UBO9EWI4V9XC"',
+840 verbose headers   age: '299',
+840 verbose headers   connection: 'keep-alive',
+840 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+840 verbose headers   'x-cache': 'HIT',
+840 verbose headers   'x-cache-hits': '32',
+840 verbose headers   'x-timer': 'S1461754918.762742,VS0,VE0',
+840 verbose headers   vary: 'Accept-Encoding' }
+841 silly get cb [ 304,
+841 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+841 silly get     via: '1.1 varnish',
+841 silly get     'cache-control': 'max-age=300',
+841 silly get     etag: '"2UCIXDVPHPVG0UBO9EWI4V9XC"',
+841 silly get     age: '299',
+841 silly get     connection: 'keep-alive',
+841 silly get     'x-served-by': 'cache-lcy1128-LCY',
+841 silly get     'x-cache': 'HIT',
+841 silly get     'x-cache-hits': '32',
+841 silly get     'x-timer': 'S1461754918.762742,VS0,VE0',
+841 silly get     vary: 'Accept-Encoding' } ]
+842 verbose etag https://registry.npmjs.org/balanced-match from cache
+843 verbose get saving balanced-match to /Users/iandenty/.npm/registry.npmjs.org/balanced-match/.cache.json
+844 silly addNameRange number 2 { name: 'balanced-match',
+844 silly addNameRange   range: '>=0.3.0 <0.4.0',
+844 silly addNameRange   hasData: true }
+845 silly addNameRange versions [ 'balanced-match',
+845 silly addNameRange   [ '0.0.0', '0.0.1', '0.1.0', '0.2.0', '0.2.1', '0.3.0', '0.4.0' ] ]
+846 silly addNamed balanced-match@0.3.0
+847 verbose addNamed "0.3.0" is a plain semver version for balanced-match
+848 http 304 https://registry.npmjs.org/concat-map
+849 verbose headers { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+849 verbose headers   via: '1.1 varnish',
+849 verbose headers   'cache-control': 'max-age=300',
+849 verbose headers   etag: '"66LI2B4AH1989LYDFSL4P944A"',
+849 verbose headers   age: '143',
+849 verbose headers   connection: 'keep-alive',
+849 verbose headers   'x-served-by': 'cache-lcy1135-LCY',
+849 verbose headers   'x-cache': 'HIT',
+849 verbose headers   'x-cache-hits': '400',
+849 verbose headers   'x-timer': 'S1461754918.766264,VS0,VE0',
+849 verbose headers   vary: 'Accept-Encoding' }
+850 silly get cb [ 304,
+850 silly get   { date: 'Wed, 27 Apr 2016 11:01:58 GMT',
+850 silly get     via: '1.1 varnish',
+850 silly get     'cache-control': 'max-age=300',
+850 silly get     etag: '"66LI2B4AH1989LYDFSL4P944A"',
+850 silly get     age: '143',
+850 silly get     connection: 'keep-alive',
+850 silly get     'x-served-by': 'cache-lcy1135-LCY',
+850 silly get     'x-cache': 'HIT',
+850 silly get     'x-cache-hits': '400',
+850 silly get     'x-timer': 'S1461754918.766264,VS0,VE0',
+850 silly get     vary: 'Accept-Encoding' } ]
+851 verbose etag https://registry.npmjs.org/concat-map from cache
+852 verbose get saving concat-map to /Users/iandenty/.npm/registry.npmjs.org/concat-map/.cache.json
+853 silly cache afterAdd balanced-match@0.3.0
+854 verbose afterAdd /Users/iandenty/.npm/balanced-match/0.3.0/package/package.json not in flight; writing
+855 verbose afterAdd /Users/iandenty/.npm/balanced-match/0.3.0/package/package.json written
+856 silly cache afterAdd concat-map@0.0.1
+857 verbose afterAdd /Users/iandenty/.npm/concat-map/0.0.1/package/package.json not in flight; writing
+858 verbose afterAdd /Users/iandenty/.npm/concat-map/0.0.1/package/package.json written
+859 silly install resolved [ { name: 'balanced-match',
+859 silly install resolved     description: 'Match balanced character pairs, like "{" and "}"',
+859 silly install resolved     version: '0.3.0',
+859 silly install resolved     repository:
+859 silly install resolved      { type: 'git',
+859 silly install resolved        url: 'git://github.com/juliangruber/balanced-match.git' },
+859 silly install resolved     homepage: 'https://github.com/juliangruber/balanced-match',
+859 silly install resolved     main: 'index.js',
+859 silly install resolved     scripts: { test: 'make test' },
+859 silly install resolved     dependencies: {},
+859 silly install resolved     devDependencies: { tape: '~4.2.2' },
+859 silly install resolved     keywords: [ 'match', 'regexp', 'test', 'balanced', 'parse' ],
+859 silly install resolved     author:
+859 silly install resolved      { name: 'Julian Gruber',
+859 silly install resolved        email: 'mail@juliangruber.com',
+859 silly install resolved        url: 'http://juliangruber.com' },
+859 silly install resolved     license: 'MIT',
+859 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+859 silly install resolved     gitHead: 'a7114b0986554787e90b7ac595a043ca75ea77e5',
+859 silly install resolved     bugs: { url: 'https://github.com/juliangruber/balanced-match/issues' },
+859 silly install resolved     _id: 'balanced-match@0.3.0',
+859 silly install resolved     _shasum: 'a91cdd1ebef1a86659e70ff4def01625fc2d6756',
+859 silly install resolved     _from: 'balanced-match@>=0.3.0 <0.4.0',
+859 silly install resolved     _npmVersion: '2.14.7',
+859 silly install resolved     _nodeVersion: '4.2.1',
+859 silly install resolved     _npmUser: { name: 'juliangruber', email: 'julian@juliangruber.com' },
+859 silly install resolved     dist:
+859 silly install resolved      { shasum: 'a91cdd1ebef1a86659e70ff4def01625fc2d6756',
+859 silly install resolved        tarball: 'http://registry.npmjs.org/balanced-match/-/balanced-match-0.3.0.tgz' },
+859 silly install resolved     maintainers: [ [Object] ],
+859 silly install resolved     directories: {},
+859 silly install resolved     _resolved: 'https://registry.npmjs.org/balanced-match/-/balanced-match-0.3.0.tgz',
+859 silly install resolved     readme: 'ERROR: No README data found!' },
+859 silly install resolved   { name: 'concat-map',
+859 silly install resolved     description: 'concatenative mapdashery',
+859 silly install resolved     version: '0.0.1',
+859 silly install resolved     repository:
+859 silly install resolved      { type: 'git',
+859 silly install resolved        url: 'git://github.com/substack/node-concat-map.git' },
+859 silly install resolved     main: 'index.js',
+859 silly install resolved     keywords: [ 'concat', 'concatMap', 'map', 'functional', 'higher-order' ],
+859 silly install resolved     directories: { example: 'example', test: 'test' },
+859 silly install resolved     scripts: { test: 'tape test/*.js' },
+859 silly install resolved     devDependencies: { tape: '~2.4.0' },
+859 silly install resolved     license: 'MIT',
+859 silly install resolved     author:
+859 silly install resolved      { name: 'James Halliday',
+859 silly install resolved        email: 'mail@substack.net',
+859 silly install resolved        url: 'http://substack.net' },
+859 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+859 silly install resolved     bugs: { url: 'https://github.com/substack/node-concat-map/issues' },
+859 silly install resolved     homepage: 'https://github.com/substack/node-concat-map',
+859 silly install resolved     _id: 'concat-map@0.0.1',
+859 silly install resolved     dist:
+859 silly install resolved      { shasum: 'd8a96bd77fd68df7793a73036a3ba0d5405d477b',
+859 silly install resolved        tarball: 'http://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz' },
+859 silly install resolved     _from: 'concat-map@0.0.1',
+859 silly install resolved     _npmVersion: '1.3.21',
+859 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+859 silly install resolved     maintainers: [ [Object] ],
+859 silly install resolved     _shasum: 'd8a96bd77fd68df7793a73036a3ba0d5405d477b',
+859 silly install resolved     _resolved: 'https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz',
+859 silly install resolved     readme: 'ERROR: No README data found!' } ]
+860 info install balanced-match@0.3.0 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+861 info install concat-map@0.0.1 into /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+862 info installOne balanced-match@0.3.0
+863 verbose installOne of balanced-match to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion not in flight; installing
+864 info installOne concat-map@0.0.1
+865 verbose installOne of concat-map to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion not in flight; installing
+866 verbose lock using /Users/iandenty/.npm/_locks/balanced-match-4a1a5f3521d6ab97.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+867 silly install write writing balanced-match 0.3.0 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+868 verbose lock using /Users/iandenty/.npm/_locks/concat-map-a7102596d620b06c.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+869 silly install write writing concat-map 0.0.1 to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+870 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+871 verbose unbuild node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+872 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match is being purged from base /Users/iandenty/Sites/visualisations_explore
+873 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+874 verbose tar unpack /Users/iandenty/.npm/balanced-match/0.3.0/package.tgz
+875 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+876 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match is being purged
+877 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+878 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map is being purged from base /Users/iandenty/Sites/visualisations_explore
+879 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+880 silly gunzTarPerm modes [ '755', '644' ]
+881 verbose tar unpack /Users/iandenty/.npm/concat-map/0.0.1/package.tgz
+882 verbose tar unpacking to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+883 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map is being purged
+884 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+885 silly gunzTarPerm modes [ '755', '644' ]
+886 silly gunzTarPerm extractEntry package.json
+887 silly gunzTarPerm extractEntry package.json
+888 silly gunzTarPerm extractEntry .npmignore
+889 silly gunzTarPerm extractEntry README.md
+890 silly gunzTarPerm extractEntry LICENSE
+891 silly gunzTarPerm extractEntry index.js
+892 silly gunzTarPerm extractEntry example.js
+893 silly gunzTarPerm extractEntry index.js
+894 silly gunzTarPerm extractEntry .travis.yml
+895 silly gunzTarPerm extractEntry README.markdown
+896 silly gunzTarPerm extractEntry .travis.yml
+897 silly gunzTarPerm extractEntry LICENSE.md
+898 silly gunzTarPerm extractEntry example/map.js
+899 silly gunzTarPerm extractEntry test/map.js
+900 silly gunzTarPerm extractEntry Makefile
+901 silly gunzTarPerm extractEntry test/balanced.js
+902 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json
+903 info preinstall concat-map@0.0.1
+904 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json
+905 verbose write writing to /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json
+906 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json
+907 info preinstall balanced-match@0.3.0
+908 silly install resolved []
+909 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+910 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+911 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json
+912 info linkStuff concat-map@0.0.1
+913 silly linkStuff concat-map@0.0.1 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules as its parent node_modules
+914 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json
+915 verbose linkBins concat-map@0.0.1
+916 verbose linkMans concat-map@0.0.1
+917 verbose rebuildBundles concat-map@0.0.1
+918 info install concat-map@0.0.1
+919 info postinstall concat-map@0.0.1
+920 silly install resolved []
+921 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+922 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+923 verbose unlock done using /Users/iandenty/.npm/_locks/concat-map-a7102596d620b06c.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map
+924 info linkStuff balanced-match@0.3.0
+925 silly linkStuff balanced-match@0.3.0 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules as its parent node_modules
+926 verbose linkBins balanced-match@0.3.0
+927 verbose linkMans balanced-match@0.3.0
+928 verbose rebuildBundles balanced-match@0.3.0
+929 info install balanced-match@0.3.0
+930 info postinstall balanced-match@0.3.0
+931 verbose unlock done using /Users/iandenty/.npm/_locks/balanced-match-4a1a5f3521d6ab97.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match
+932 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+933 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+934 info linkStuff brace-expansion@1.1.3
+935 silly linkStuff brace-expansion@1.1.3 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules as its parent node_modules
+936 verbose linkBins brace-expansion@1.1.3
+937 verbose linkMans brace-expansion@1.1.3
+938 verbose rebuildBundles brace-expansion@1.1.3
+939 verbose rebuildBundles [ 'balanced-match', 'concat-map' ]
+940 info install brace-expansion@1.1.3
+941 info postinstall brace-expansion@1.1.3
+942 verbose unlock done using /Users/iandenty/.npm/_locks/brace-expansion-f799eb02d4bcbfe5.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion
+943 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+944 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+945 info linkStuff minimatch@3.0.0
+946 silly linkStuff minimatch@3.0.0 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules as its parent node_modules
+947 verbose linkBins minimatch@3.0.0
+948 verbose linkMans minimatch@3.0.0
+949 verbose rebuildBundles minimatch@3.0.0
+950 verbose rebuildBundles [ 'brace-expansion' ]
+951 info install minimatch@3.0.0
+952 info postinstall minimatch@3.0.0
+953 verbose unlock done using /Users/iandenty/.npm/_locks/minimatch-18843803a2579633.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob/node_modules/minimatch
+954 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+955 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+956 info linkStuff glob@7.0.3
+957 silly linkStuff glob@7.0.3 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules as its parent node_modules
+958 verbose linkBins glob@7.0.3
+959 verbose linkMans glob@7.0.3
+960 verbose rebuildBundles glob@7.0.3
+961 verbose rebuildBundles [ 'inflight', 'inherits', 'minimatch', 'once', 'path-is-absolute' ]
+962 info install glob@7.0.3
+963 info postinstall glob@7.0.3
+964 verbose unlock done using /Users/iandenty/.npm/_locks/glob-d2d19080b589bb72.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon/node_modules/glob
+965 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+966 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+967 info linkStuff bitballoon@0.2.2
+968 silly linkStuff bitballoon@0.2.2 has /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules as its parent node_modules
+969 verbose linkBins bitballoon@0.2.2
+970 verbose link bins [ { bitballoon: './bin/bitballoon' },
+970 verbose link bins   '/Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/.bin',
+970 verbose link bins   false ]
+971 verbose linkMans bitballoon@0.2.2
+972 verbose rebuildBundles bitballoon@0.2.2
+973 verbose rebuildBundles [ 'base64-js', 'glob', 'graceful-fs' ]
+974 silly gentlyRm /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/.bin/bitballoon is being purged
+975 verbose gentlyRm don't care about contents; nuking /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/.bin/bitballoon
+976 info install bitballoon@0.2.2
+977 info postinstall bitballoon@0.2.2
+978 verbose unlock done using /Users/iandenty/.npm/_locks/bitballoon-e81c3e24c89a6ef3.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/node_modules/bitballoon
+979 verbose about to build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon
+980 info build /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon
+981 info linkStuff grunt-bitballoon@0.1.3
+982 silly linkStuff grunt-bitballoon@0.1.3 has /Users/iandenty/Sites/visualisations_explore/node_modules as its parent node_modules
+983 verbose linkBins grunt-bitballoon@0.1.3
+984 verbose linkMans grunt-bitballoon@0.1.3
+985 verbose rebuildBundles grunt-bitballoon@0.1.3
+986 verbose rebuildBundles [ '.bin', 'bitballoon' ]
+987 info install grunt-bitballoon@0.1.3
+988 info postinstall grunt-bitballoon@0.1.3
+989 verbose readDependencies loading dependencies from /Users/iandenty/Sites/visualisations_explore/package.json
+990 verbose targetResolver reading package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt/package.json
+991 verbose targetResolver reading package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-assemble/package.json
+992 verbose targetResolver reading package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon/package.json
+993 verbose targetResolver reading package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-contrib-clean/package.json
+994 verbose targetResolver reading package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-contrib-connect/package.json
+995 verbose targetResolver reading package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-contrib-uglify/package.json
+996 verbose targetResolver reading package data from /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-contrib-watch/package.json
+997 verbose targetResolver reading package data from /Users/iandenty/Sites/visualisations_explore/node_modules/.bin/grunt/package.json
+998 verbose already installed skipping grunt@~0.4.1 /Users/iandenty/Sites/visualisations_explore
+999 silly install resolved []
+1000 verbose unlock done using /Users/iandenty/.npm/_locks/grunt-bitballoon-9084bc7839fb8189.lock for /Users/iandenty/Sites/visualisations_explore/node_modules/grunt-bitballoon
+1001 verbose validateInstall loading /Users/iandenty/Sites/visualisations_explore/package.json for validation
+1002 verbose stack Error: The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+1002 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+1002 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+1002 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+1002 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1002 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1002 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1002 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1002 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1002 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1002 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1003 verbose cwd /Users/iandenty/Sites/visualisations_explore
+1004 error Darwin 13.4.0
+1005 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt-bitballoon" "--save-dev"
+1006 error node v4.2.4
+1007 error npm  v2.14.12
+1008 error code EPEERINVALID
+1009 error peerinvalid The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+1009 error peerinvalid Peer grunt-contrib-connect@1.0.1 wants grunt@>=0.4.0
+1009 error peerinvalid Peer grunt-bitballoon@0.1.3 wants grunt@~0.4.1
+1009 error peerinvalid Peer grunt-contrib-clean@1.0.0 wants grunt@>= 0.4.5
+1010 verbose exit [ 1, true ]

@@ -1,0 +1,148 @@
+---
+pageTitle: 'maps'
+---
+<section>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Stylised choropleth map of Europe with tooltip</h3>
+    </div>
+    <div class="panel-body">
+      <div id="map-simplified"></div>
+    </div>
+  </div>
+</section>
+<style type="text/css">
+  path {
+    stroke: #fff;
+    stroke-width: 0.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .country:hover {
+    fill: #1f78b4 !important;
+    opacity: 0.9 !important;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+
+  .tooltip {
+    color: #222;
+    background-color: #fff;
+    padding: .5em;
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px;
+    opacity: 0.9;
+    position: absolute;
+  }
+
+  .tooltip span {
+    font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+    display: block;
+  }
+</style>
+<script type="text/javascript">
+  var lookup = { // emplyment stats: Employment rate, age group 15–64, 2014 EuroStat
+    "Austria": 71.1,
+    "Belgium": 61.9,
+    "Bulgaria": 61,
+    "Croatia": 54.6,
+    "Cyprus": 62.1,
+    "Czech Republic": 69,
+    "Denmark": 72.8,
+    "Estonia": 69.6,
+    "Finland": 68.7,
+    "Former Yugoslav Republic of Macedonia, the": 46.9,
+    "France": 64.3,
+    "Germany": 72.8,
+    "Greece": 49.4,
+    "Hungary": 61.8,
+    "Iceland": 81.7,
+    "Ireland": 61.7,
+    "Italy": 55.7,
+    "Latvia": 66.3,
+    "Liechtenstein": 70, // Guess
+    "Lithuania": 65.7,
+    "Luxembourg": 66.6,
+    "Malta": 62.3,
+    "Montenegro": 62, // Guess
+    "Netherlands": 73.1,
+    "Norway": 75.2,
+    "Poland": 61.7,
+    "Portugal": 62.6,
+    "Romania": 61,
+    "Slovakia": 61,
+    "Slovenia": 63.9,
+    "Spain": 56,
+    "Sweden": 74.9,
+    "Switzerland": 79.8,
+    "Turkey": 49.5,
+    "United Kingdom": 71.9
+  };
+
+  var width = 700,
+      height = 550;
+
+  var color = d3.scale.linear()
+      .range(['#efedf5','#756bb1']);
+
+  var svg = d3.select("#map-simplified").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  var tooltip = d3.select('body').append('div')
+              .attr('class', 'hidden tooltip');
+
+  d3.json("europe-countries-simplified.json", function(error, europe) {
+    if (error) return console.error(error);
+
+  var projection = d3.geo.albers()
+    .center([0, 55.4])
+    .rotate([4.4, 0])
+    .parallels([50, 60])
+    .scale(800)
+    .translate([width/4, height / 2]);
+
+  var path = d3.geo.path()
+    .projection(projection);
+
+  var countries = topojson.feature(europe, europe.objects.countries);
+
+    for(var i=0; i < countries.features.length; i++) {
+      var countryName = countries.features[i].properties.name;
+      if(countryName in lookup) {
+        countries.features[i].properties.employment = lookup[countryName];
+      }
+    }
+
+    var dataExtent = d3.extent(europe.objects.countries.geometries, function(d) {
+      return d.properties.employment;
+    });
+
+    color.domain(dataExtent);
+
+    svg.selectAll(".country")
+      .data(countries.features)
+        .enter().append("path")
+          .attr("class", function(d) { return "country country--" + d.properties.name; })
+          .style("fill", function(d) { return color(d.properties.employment); })
+          .attr("d", path)
+          .on('mousemove', function(d) {
+
+            tooltip.classed('hidden', false)
+                .attr('style', 'left:' + (d3.event.pageX + 15) +
+                        'px; top:' + (d3.event.pageY - 20) + 'px')
+                .html(
+                  '<span><strong>'+d.properties.name+'</strong></span>'+
+                  '<span><strong>Population:</strong> '+String(d.properties.population).replace(/(.)(?=(\d{3})+$)/g,'$1,')+'</span>'+
+                  '<span><strong>Employment:</strong> '+d.properties.employment+'%</span>');
+          })
+          .on('mouseout', function(d) {
+            tooltip.classed('hidden', true);
+          })
+  });
+</script>
